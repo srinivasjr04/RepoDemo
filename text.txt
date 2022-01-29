@@ -1,10 +1,8 @@
- Volume in drive C is Windows
- Volume Serial Number is 360D-9541
+git init
+git status
+git add .    (. for all the files and folders)
+git add "filename"  for a perticular file to add
+git commint -m ".....optional text..."
 
- Directory of C:\Users\jsrin\Desktop\MyProject
-
-29-01-2022  12:33    <DIR>          .
-29-01-2022  12:31    <DIR>          ..
-29-01-2022  12:33                 0 text.txt
-               1 File(s)              0 bytes
-               2 Dir(s)  134,680,465,408 bytes free
+git config --global user.email "jsrinivasareddy@gmail.com"
+git config --global user.name "Srinivasa Reddy Jayavarapu"
