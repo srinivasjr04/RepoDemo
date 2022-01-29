@@ -1,0 +1,326 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\Users\jsrin\TCS\DECT_FP1> C:\Users\jsrin\.espressif\python_env\idf4.1_py3.8_env\Scripts\python.exe C:\Users\jsrin\esp\esp-idf\tools\idf.py -p COM4 monitor
+Executing action: monitor
+Running idf_monitor in directory c:\users\jsrin\tcs\dect_fp1
+Executing "C:\Users\jsrin\.espressif\python_env\idf4.1_py3.8_env\Scripts\python.exe C:\Users\jsrin\esp\esp-idf\tools/idf_monitor.py -p COM4 -b 115200 --toolchain-prefix xtensa-esp32-elf- c:\users\jsrin\tcs\dect_fp1\build\DECT_FP1.elf -m 'C:\Users\jsrin\.espressif\python_env\idf4.1_py3.8_env\Scripts\python.exe' 'C:\Users\jsrin\esp\esp-idf\tools\idf.py' '-p' 'COM4'"...
+--- idf_monitor on COM4 115200 ---
+--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---
+I (12) boot: ESP-IDF v4.1.2-dirty 2nd stage bootloader
+I (12) boot: compile time 14:32:48
+I (12) boot: chip revision: 1
+I (14) boot_comm: chip revision: 1, min. bootloader chip revision: 0
+I (21) boot.esp32: SPI Speed      : 40MHz
+I (26) boot.esp32: SPI Mode       : DIO
+I (30) boot.esp32: SPI Flash Size : 8MB
+I (35) boot: Enabling RNG early entropy source...
+I (40) boot: Partition Table:
+I (44) boot: ## Label            Usage          Type ST Offset   Length
+I (51) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+I (59) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+I (66) boot:  2 factory          factory app      00 00 00010000 00100000
+I (74) boot: End of partition table
+I (78) boot_comm: chip revision: 1, min. application chip revision: 0
+I (85) esp_image: segment 0: paddr=0x00010020 vaddr=0x3f400020 size=0x1249c ( 74908) map
+I (122) esp_image: segment 1: paddr=0x000224c4 vaddr=0x3ffb0000 size=0x020ec (  8428) load
+I (126) esp_image: segment 2: paddr=0x000245b8 vaddr=0x40080000 size=0x00404 (  1028) load
+0x40080000: _WindowOverflow4 at C:/Users/jsrin/esp/esp-idf/components/freertos/xtensa_vectors.S:1778
+
+I (130) esp_image: segment 3: paddr=0x000249c4 vaddr=0x40080404 size=0x0b654 ( 46676) load
+I (159) esp_image: segment 4: paddr=0x00030020 vaddr=0x400d0020 size=0x46e54 (290388) map
+0x400d0020: _stext at ??:?
+
+I (270) esp_image: segment 5: paddr=0x00076e7c vaddr=0x4008ba58 size=0x016f8 (  5880) load
+0x4008ba58: rtc_clk_cal_internal at C:/Users/jsrin/esp/esp-idf/components/soc/esp32/rtc_time.c:45 (discriminator 1)
+
+I (279) boot: Loaded app from partition at offset 0x10000
+I (280) boot: Disabling RNG early entropy source...
+I (281) cpu_start: Pro cpu up.
+I (285) cpu_start: Application information:
+I (290) cpu_start: Project name:     DECT_FP1
+I (295) cpu_start: App version:      1
+I (299) cpu_start: Compile time:     Oct 18 2021 14:32:08
+I (305) cpu_start: ELF file SHA256:  cac3bbe58b9403b6...
+I (311) cpu_start: ESP-IDF:          v4.1.2-dirty
+I (317) cpu_start: Starting app cpu, entry point is 0x4008144c
+0x4008144c: call_start_cpu1 at C:/Users/jsrin/esp/esp-idf/components/esp32/cpu_start.c:276
+
+I (0) cpu_start: App cpu up.
+I (327) heap_init: Initializing. RAM available for dynamic allocation:
+I (334) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM
+I (340) heap_init: At 3FFB41C0 len 0002BE40 (175 KiB): DRAM
+I (346) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM
+I (353) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM
+I (359) heap_init: At 4008D150 len 00012EB0 (75 KiB): IRAM
+I (365) cpu_start: Pro cpu start user code
+I (383) spi_flash: detected chip: gd
+I (384) spi_flash: flash io: dio
+I (384) cpu_start: Starting scheduler on PRO CPU.
+I (0) cpu_start: Starting scheduler on APP CPU.
+I (467) VOIP_EXAMPLE: [1.0] Initialize peripherals management
+I (467) VOIP_EXAMPLE: [1.1] Initialize and start peripherals
+I (467) gpio: GPIO[36]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 
+I (477) gpio: GPIO[39]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3
+I (487) VOIP_EXAMPLE: [ 2 ] Start codec chip
+W (487) AUDIO_BOARD: The Audio board has not yet initialized!
+W (507) PERIPH_TOUCH: _touch_init
+I (507) gpio: GPIO[19]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3
+E (517) gpio: gpio_install_isr_service(438): GPIO isr service already installed
+E (527) I2C_BUS: C:/Users/jsrin/esp/esp-adf/components/esp_peripherals/driver/i2c_bus/i2c_bus.c:101 (i2c_bus_write_bytes):I2C Bus WriteReg Error
+E (537) I2C_BUS: C:/Users/jsrin/esp/esp-adf/components/esp_peripherals/driver/i2c_bus/i2c_bus.c:101 (i2c_bus_write_bytes):I2C Bus WriteReg Error
+E (557) I2C_BUS: C:/Users/jsrin/esp/esp-adf/components/esp_peripherals/driver/i2c_bus/i2c_bus.c:101 (i2c_bus_write_bytes):I2C Bus WriteReg Error       
+E (567) I2C_BUS: C:/Users/jsrin/esp/esp-adf/components/esp_peripherals/driver/i2c_bus/i2c_bus.c:101 (i2c_bus_write_bytes):I2C Bus WriteReg Error
+E (577) I2C_BUS: C:/Users/jsrin/esp/esp-adf/components/esp_peripherals/driver/i2c_bus/i2c_bus.c:101 (i2c_bus_write_bytes):I2C Bus WriteReg Error
+E (587) I2C_BUS: C:/Users/jsrin/esp/esp-adf/components/esp_peripherals/driver/i2c_bus/i2c_bus.c:101 (i2c_bus_write_bytes):I2C Bus WriteReg Error
+E (607) I2C_BUS: C:/Users/jsrin/esp/esp-adf/components/esp_peripherals/driver/i2c_bus/i2c_bus.c:101 (i2c_bus_write_bytes):I2C Bus WriteReg Error
+E (617) I2C_BUS: C:/Users/jsrin/esp/esp-adf/components/esp_peripherals/driver/i2c_bus/i2c_bus.c:101 (i2c_bus_write_bytes):I2C Bus WriteReg Error
+E (637) I2C_BUS: C:/Users/jsrin/esp/esp-adf/components/esp_peripherals/driver/i2c_bus/i2c_bus.c:101 (i2c_bus_write_bytes):I2C Bus WriteReg Error
+E (657) I2C_BUS: C:/Users/jsrin/esp/esp-adf/components/esp_peripherals/driver/i2c_bus/i2c_bus.c:101 (i2c_bus_write_bytes):I2C Bus WriteReg Error
+E (657) I2C_BUS: C:/Users/jsrin/esp/esp-adf/components/esp_peripherals/driver/i2c_bus/i2c_bus.c:101 (i2c_bus_write_bytes):I2C Bus WriteReg Error
+E (677) I2C_BUS: C:/Users/jsrin/esp/esp-adf/components/esp_peripherals/driver/i2c_bus/i2c_bus.c:101 (i2c_bus_write_bytes):I2C Bus WriteReg Error       
+E (687) I2C_BUS: C:/Users/jsrin/esp/esp-adf/components/esp_peripherals/driver/i2c_bus/i2c_bus.c:101 (i2c_bus_write_bytes):I2C Bus WriteReg Error
+E (707) I2C_BUS: C:/Users/jsrin/esp/esp-adf/components/esp_peripherals/driver/i2c_bus/i2c_bus.c:101 (i2c_bus_write_bytes):I2C Bus WriteReg Error
+E (717) I2C_BUS: C:/Users/jsrin/esp/esp-adf/components/esp_peripherals/driver/i2c_bus/i2c_bus.c:101 (i2c_bus_write_bytes):I2C Bus WriteReg Error
+E (727) I2C_BUS: C:/Users/jsrin/esp/esp-adf/components/esp_peripherals/driver/i2c_bus/i2c_bus.c:101 (i2c_bus_write_bytes):I2C Bus WriteReg Error
+E (737) I2C_BUS: C:/Users/jsrin/esp/esp-adf/components/esp_peripherals/driver/i2c_bus/i2c_bus.c:101 (i2c_bus_write_bytes):I2C Bus WriteReg Error
+E (757) I2C_BUS: C:/Users/jsrin/esp/esp-adf/components/esp_peripherals/driver/i2c_bus/i2c_bus.c:101 (i2c_bus_write_bytes):I2C Bus WriteReg Error
+E (767) I2C_BUS: C:/Users/jsrin/esp/esp-adf/components/esp_peripherals/driver/i2c_bus/i2c_bus.c:101 (i2c_bus_write_bytes):I2C Bus WriteReg Error
+E (787) I2C_BUS: C:/Users/jsrin/esp/esp-adf/components/esp_peripherals/driver/i2c_bus/i2c_bus.c:101 (i2c_bus_write_bytes):I2C Bus WriteReg Error       
+E (797) I2C_BUS: C:/Users/jsrin/esp/esp-adf/components/esp_peripherals/driver/i2c_bus/i2c_bus.c:101 (i2c_bus_write_bytes):I2C Bus WriteReg Error
+E (817) I2C_BUS: C:/Users/jsrin/esp/esp-adf/components/esp_peripherals/driver/i2c_bus/i2c_bus.c:101 (i2c_bus_write_bytes):I2C Bus WriteReg Error
+E (827) I2C_BUS: C:/Users/jsrin/esp/esp-adf/components/esp_peripherals/driver/i2c_bus/i2c_bus.c:101 (i2c_bus_write_bytes):I2C Bus WriteReg Error
+E (837) I2C_BUS: C:/Users/jsrin/esp/esp-adf/components/esp_peripherals/driver/i2c_bus/i2c_bus.c:101 (i2c_bus_write_bytes):I2C Bus WriteReg Error
+E (847) I2C_BUS: C:/Users/jsrin/esp/esp-adf/components/esp_peripherals/driver/i2c_bus/i2c_bus.c:101 (i2c_bus_write_bytes):I2C Bus WriteReg Error
+E (867) I2C_BUS: C:/Users/jsrin/esp/esp-adf/components/esp_peripherals/driver/i2c_bus/i2c_bus.c:101 (i2c_bus_write_bytes):I2C Bus WriteReg Error
+E (877) I2C_BUS: C:/Users/jsrin/esp/esp-adf/components/esp_peripherals/driver/i2c_bus/i2c_bus.c:101 (i2c_bus_write_bytes):I2C Bus WriteReg Error
+E (887) I2C_BUS: C:/Users/jsrin/esp/esp-adf/components/esp_peripherals/driver/i2c_bus/i2c_bus.c:101 (i2c_bus_write_bytes):I2C Bus WriteReg Error
+I (917) gpio: GPIO[21]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0
+I (917) ES8388_DRIVER: init,out:02, in:00
+E (917) AUDIO_HAL: codec init failed!
+E (927) AUDIO_BOARD: C:/Users/jsrin/esp/esp-adf/components/audio_board/lyrat_v4_3/board.c:57 (audio_board_codec_init): Got NULL Pointer
+E (937) AUDIO_HAL: audio_hal handle is null
+I (937) INIT: APP COLA
+I (947) app_main: APP STARED
+I (947) tsk: TASKCREATing
+
+ PRINTF TEST
+I (947) BusMail: Busmail Task Started
+I (957) spi: spi init returns 0
+E (957) SPI: SPI Communication Task
+I (967) INIT SUB STATE1: ENTERED
+I (967) CMD: SET FEATURES
+I (967) INIT STATE: STARTED
+1001c8c8
+Rx- 10 Rx- 0 Rx- 1 Rx- c0 Rx- c0 1006801a0401ea
+Rx- 10 Rx- 0 Rx- 1 Rx- 81 Rx- 81 Rx- 10 Rx- 0 Rx- 7 Rx- 9 Rx- 0 Rx- 1 Rx- a1 Rx- 40 Rx- 0 Rx- 1 Rx- ec 1007180114420372
+CV 9 0 1 a1 40 0 1 0 0 0 0 0 0 0 0 0 9e I (1017) INIT SUB STATE1: ENTERED
+Rx- 10 Rx- 0 Rx- 1 Rx- 82 Rx- 82 Rx- 10 Rx- 0 Rx- 8 Rx- 1a Rx- 0 Rx- 1 Rx- 15 Rx- 42 Rx- 0 Rx- 0 Rx- 3 Rx- 75 10018181
+CV 1a 0 1 15 42 0 0 3 0 0 0 0 0 0 0 0 9e I (1037) INIT SUB STATE1: ENTERED
+1007290114421384
+10018282
+Rx- 10 Rx- 0 Rx- 1 Rx- 83 Rx- 83 10073a01041107d
+Rx- 10 Rx- 0 Rx- 8 Rx- 2b Rx- 0 Rx- 1 Rx- 15 Rx- 42 Rx- 0 Rx- 1 Rx- 3 Rx- 87 CV 2b 0 1 15 42 0 1 3 0 0 0 0 0 0 0 0 9e Rx- 10 Rx- 0 Rx- 1 Rx- 84 Rx- 84 10054a0164091
+Rx- 10 Rx- 0 Rx- c Rx- 3c Rx- 0 Rx- 1 Rx- 1 Rx- 41 Rx- 0 Rx- 6 Rx- 0 Rx- 1 Rx- 0 Rx- 1 Rx- 0 Rx- 87 CV 3c 0 1 1 41 0 6 0 1 0 1 0 0 0 0 0 9e I (1127) INIT STATE: API_FP_MM_GET_REGISTRATION_COUNT_CFM
+10I (1137) TERMINAL ID COUNT: 1
+055a014409f
+I (1137) HANDSET: GET IPUI
+I (1147) REGISTERED HS ID: 1
+Rx- 10 Rx- 0 Rx- 1 Rx- 85 Rx- 85 10056a01a40b5
+Rx- 10 Rx- 0 Rx- 9 Rx- 4d Rx- 0 Rx- 1 Rx- 7 Rx- 40 Rx- 0 Rx- 0 Rx- 0 Rx- 0 Rx- 95 CV 4d 0 1 7 40 0 0 0 0 0 1 0 0 0 0 0 9e Rx- 10 Rx- 0 Rx- 1 Rx- 86 Rx- 86 10057a01146c2
+Rx- 10 Rx- 0 Rx- b Rx- 5e Rx- 0 Rx- 1 Rx- 5 Rx- 40 Rx- 0 Rx- 2 Rx- eb Rx- 7f Rx- 9f Rx- e0 Rx- 8f CV 5e 0 1 5 40 0 2 eb 7f 9f e0 0 0 0 0 0 9e Rx- 10 Rx- 0 Rx- 1 Rx- 87 Rx- 87 Rx- 10 Rx- 0 Rx- a Rx- 6f Rx- 0 Rx- 1 Rx- b Rx- 40 Rx- 0 Rx- ff Rx- ff Rx- 0 Rx- 0 1007a0114422Rx- b9 366
+CV 6f 0 1 b 40 0 ff ff 0 0 e0 0 0 0 0 0 9e I (1207) INIT STATE: API_FP_MM_GET_ACCESS_CODE_CFM
+Rx- 10 Rx- 0 Rx- 1 Rx- 80 Rx- 80 Rx- 10 Rx- 0 Rx- 1 Rx- 81 Rx- 81 Rx- 10 Rx- 0 Rx- 8 Rx- 79 Rx- 0 Rx- 1 Rx- 15 Rx- 42 Rx- 0 Rx- 2 10018383
+Rx- 3 Rx- d6 CV 79 0 1 15 42 0 2 3 0 0 e0 0 0 0 0 0 9e 10071b0114423378
+Rx- 10 Rx- 0 Rx- 1 Rx- 82 Rx- 82 Rx- 10 Rx- 0 Rx- 8 Rx- a Rx- 0 Rx- 1 Rx- 15 Rx- 42 Rx- 0 Rx- 3 Rx- 3 Rx- 68 CV a 0 1 15 42 0 3 3 0 0 e0 0 0 0 0 0 9e 10018484
+10072c010556088
+Rx- 10 Rx- 0 Rx- 1 Rx- 83 Rx- 83 Rx- 10 Rx- 0 Rx- 16 Rx- 1b Rx- 0 Rx- 1 Rx- 1 Rx- 55 Rx- 6 Rx- 2 Rx- 0 Rx- 0 Rx- 0 Rx- 0 Rx- 0 Rx- 0 Rx- ff Rx- 6 Rx- 0 Rx- 1 Rx- 10 Rx- 3 Rx- 2 Rx- 7 Rx- 10 Rx- ac CV 1b 0 1 1 55 6 2 0 0 0 0 0 0 ff 6 0 9e 10018585
+10073d019411089
+Rx- 10 Rx- 0 Rx- 1 Rx- 84 Rx- 84 Rx- 10 Rx- 0 Rx- 26 Rx- 2c Rx- 0 Rx- 1 Rx- a Rx- 41 Rx- 0 Rx- 1 Rx- 0 Rx- 3 Rx- 31 Rx- d4 Rx- 26 Rx- fd Rx- 17 Rx- 0 Rx- 18 Rx- 0 Rx- 3 Rx- 9 Rx- 0 Rx- 1 Rx- 1 Rx- 0 Rx- a Rx- 1 Rx- 2 Rx- 3 Rx- 0 Rx- 0 Rx- 1 Rx- 2 Rx- 0 Rx- 0 Rx- 4 Rx- 1b Rx- 0 Rx- 1 Rx- 0 Rx- 14 10018686
+CV 2c 0 1 a 41 0 1 0 3 31 d4 26 fd 17 0 18 9e 10018787
+10018080
+10018181
+10018282
+Rx- 10 Rx- 0 Rx- 16 Rx- 1c Rx- 0 Rx- 1 Rx- 1 Rx- 11 Rx- 0 Rx- 0 Rx- 0 Rx- 0 Rx- 0 Rx- 0 Rx- 0 Rx- ff Rx- 6 Rx- 0 Rx- 1 Rx- 10 Rx- 3 Rx- 2 Rx- 7 Rx- 10 Rx- ad Rx- 10 Rx- 0 Rx- 26 Rx- 2c Rx- 0 Rx- 1 Rx- a Rx- 41 Rx- 0 Rx- 1 Rx- 0 Rx- 3 Rx- 31 Rx- d4 Rx- 26 Rx- fd Rx- 17 Rx- 0 Rx- 18 Rx- 0 Rx- 3 Rx- 9 Rx- 0 Rx- 1 Rx- 1 Rx- 0 Rx- a Rx- 1 Rx- 2 Rx- 3 Rx- 0 Rx- 0 Rx- 1 Rx- 2 Rx- 0 Rx- 0 Rx- 4 10074a012552Rx- 1b 0a4
+Rx- 0 Rx- 1 Rx- 0 Rx- 14 Rx- 10 Rx- 0 Rx- 1 Rx- 85 Rx- 85 Rx- 10 Rx- 0 Rx- 7 Rx- 3d Rx- 0 Rx- 1 Rx- 3 Rx- 55 Rx- 2 Rx- 0 Rx- 98 CV 3d 0 1 3 55 2 0 0 0 0 0 0 ff 6 0 1 9e 10018383
+10018484
+10055c01d41ab
+Rx- 10 Rx- 0 Rx- 1 Rx- 86 Rx- 86 100126c010421010010010000b3
+Rx- 10 Rx- 0 Rx- 1 Rx- 87 Rx- 87 Rx- 10 Rx- 0 Rx- 6 Rx- 4f Rx- 0 Rx- 1 Rx- 1 Rx- 42 Rx- 0 Rx- 93 CV 4f 0 1 1 42 0 0 0 0 0 0 0 ff 6 0 1 9e 10018585
+100a7d0125921100dd
+Rx- 10 Rx- 0 Rx- 1 Rx- 80 Rx- 80 Rx- 10 Rx- 0 Rx- 6 Rx- 58 Rx- 0 Rx- 1 Rx- 3 Rx- 59 Rx- 0 Rx- b5 CV 58 0 1 3 59 0 0 0 0 0 0 0 ff 6 0 1 9e 10018686
+
+Traceback (most recent call last):
+  File "C:\Users\jsrin\esp\esp-idf\tools/idf_monitor.py", line 499, in main_loop
+    item = self.cmd_queue.get_nowait()
+  File "queue.py", line 198, in get_nowait
+  File "queue.py", line 167, in get
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\jsrin\esp\esp-idf\tools/idf_monitor.py", line 969, in <module>
+    main()
+  File "C:\Users\jsrin\esp\esp-idf\tools/idf_monitor.py", line 870, in main
+    monitor.main_loop()
+  File "C:\Users\jsrin\esp\esp-idf\tools/idf_monitor.py", line 502, in main_loop
+    item = self.event_queue.get(True, 0.03)
+  File "queue.py", line 179, in get
+  File "threading.py", line 306, in wait
+KeyboardInterrupt
+
+Aborted!
+PS C:\Users\jsrin\TCS\DECT_FP1>
+PS C:\Users\jsrin\TCS\DECT_FP1> C:\Users\jsrin\.espressif\python_env\idf4.1_py3.8_env\Scripts\python.exe C:\Users\jsrin\esp\esp-idf\tools\idf.py -p COM4 monitor
+Executing action: monitor
+Running idf_monitor in directory c:\users\jsrin\tcs\dect_fp1
+Executing "C:\Users\jsrin\.espressif\python_env\idf4.1_py3.8_env\Scripts\python.exe C:\Users\jsrin\esp\esp-idf\tools/idf_monitor.py -p COM4 -b 115200 --toolchain-prefix xtensa-esp32-elf- c:\users\jsrin\tcs\dect_fp1\build\DECT_FP1.elf -m 'C:\Users\jsrin\.espressif\python_env\idf4.1_py3.8_env\Scripts\python.exe' 'C:\Users\jsrin\esp\esp-idf\tools\idf.py' '-p' 'COM4'"...
+--- idf_monitor on COM4 115200 ---
+--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---
+I (12) boot: ESP-IDF v4.1.2-dirty 2nd stage bootloader
+I (12) boot: compile time 14:36:18
+I (12) boot: chip revision: 1
+I (14) boot_comm: chip revision: 1, min. bootloader chip revision: 0
+I (21) boot.esp32: SPI Speed      : 40MHz
+I (26) boot.esp32: SPI Mode       : DIO
+I (30) boot.esp32: SPI Flash Size : 8MB
+I (35) boot: Enabling RNG early entropy source...
+I (40) boot: Partition Table:
+I (44) boot: ## Label            Usage          Type ST Offset   Length
+I (51) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+I (59) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+I (66) boot:  2 factory          factory app      00 00 00010000 00100000
+I (74) boot: End of partition table
+I (78) boot_comm: chip revision: 1, min. application chip revision: 0
+I (85) esp_image: segment 0: paddr=0x00010020 vaddr=0x3f400020 size=0x1249c ( 74908) map
+I (122) esp_image: segment 1: paddr=0x000224c4 vaddr=0x3ffb0000 size=0x020ec (  8428) load
+I (126) esp_image: segment 2: paddr=0x000245b8 vaddr=0x40080000 size=0x00404 (  1028) load
+0x40080000: _WindowOverflow4 at C:/Users/jsrin/esp/esp-idf/components/freertos/xtensa_vectors.S:1778
+
+I (130) esp_image: segment 3: paddr=0x000249c4 vaddr=0x40080404 size=0x0b654 ( 46676) load
+I (159) esp_image: segment 4: paddr=0x00030020 vaddr=0x400d0020 size=0x46e54 (290388) map
+0x400d0020: _stext at ??:?
+
+I (270) esp_image: segment 5: paddr=0x00076e7c vaddr=0x4008ba58 size=0x016f8 (  5880) load
+0x4008ba58: rtc_clk_cal_internal at C:/Users/jsrin/esp/esp-idf/components/soc/esp32/rtc_time.c:45 (discriminator 1)
+
+I (280) boot: Loaded app from partition at offset 0x10000
+I (280) boot: Disabling RNG early entropy source...
+I (281) cpu_start: Pro cpu up.
+I (285) cpu_start: Application information:
+I (290) cpu_start: Project name:     DECT_FP1
+I (295) cpu_start: App version:      1
+I (299) cpu_start: Compile time:     Oct 18 2021 14:35:44
+I (305) cpu_start: ELF file SHA256:  5940eb71ac62bb0f...
+I (311) cpu_start: ESP-IDF:          v4.1.2-dirty
+I (317) cpu_start: Starting app cpu, entry point is 0x4008144c
+0x4008144c: call_start_cpu1 at C:/Users/jsrin/esp/esp-idf/components/esp32/cpu_start.c:276
+
+I (0) cpu_start: App cpu up.
+I (327) heap_init: Initializing. RAM available for dynamic allocation:
+I (334) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM
+I (340) heap_init: At 3FFB41C0 len 0002BE40 (175 KiB): DRAM
+I (346) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM
+I (353) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM
+I (359) heap_init: At 4008D150 len 00012EB0 (75 KiB): IRAM
+I (365) cpu_start: Pro cpu start user code
+I (383) spi_flash: detected chip: gd
+I (384) spi_flash: flash io: dio
+I (384) cpu_start: Starting scheduler on PRO CPU.
+I (0) cpu_start: Starting scheduler on APP CPU.
+I (467) VOIP_EXAMPLE: [1.0] Initialize peripherals management
+I (467) VOIP_EXAMPLE: [1.1] Initialize and start peripherals
+I (467) gpio: GPIO[36]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3
+I (477) gpio: GPIO[39]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 
+I (487) VOIP_EXAMPLE: [ 2 ] Start codec chip
+W (487) AUDIO_BOARD: The Audio board has not yet initialized!
+W (507) PERIPH_TOUCH: _touch_init
+I (507) gpio: GPIO[19]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 
+E (517) gpio: gpio_install_isr_service(438): GPIO isr service already installed
+E (527) I2C_BUS: C:/Users/jsrin/esp/esp-adf/components/esp_peripherals/driver/i2c_bus/i2c_bus.c:101 (i2c_bus_write_bytes):I2C Bus WriteReg Error
+E (537) I2C_BUS: C:/Users/jsrin/esp/esp-adf/components/esp_peripherals/driver/i2c_bus/i2c_bus.c:101 (i2c_bus_write_bytes):I2C Bus WriteReg Error
+E (557) I2C_BUS: C:/Users/jsrin/esp/esp-adf/components/esp_peripherals/driver/i2c_bus/i2c_bus.c:101 (i2c_bus_write_bytes):I2C Bus WriteReg Error
+E (567) I2C_BUS: C:/Users/jsrin/esp/esp-adf/components/esp_peripherals/driver/i2c_bus/i2c_bus.c:101 (i2c_bus_write_bytes):I2C Bus WriteReg Error
+E (577) I2C_BUS: C:/Users/jsrin/esp/esp-adf/components/esp_peripherals/driver/i2c_bus/i2c_bus.c:101 (i2c_bus_write_bytes):I2C Bus WriteReg Error       
+E (587) I2C_BUS: C:/Users/jsrin/esp/esp-adf/components/esp_peripherals/driver/i2c_bus/i2c_bus.c:101 (i2c_bus_write_bytes):I2C Bus WriteReg Error
+E (607) I2C_BUS: C:/Users/jsrin/esp/esp-adf/components/esp_peripherals/driver/i2c_bus/i2c_bus.c:101 (i2c_bus_write_bytes):I2C Bus WriteReg Error
+E (617) I2C_BUS: C:/Users/jsrin/esp/esp-adf/components/esp_peripherals/driver/i2c_bus/i2c_bus.c:101 (i2c_bus_write_bytes):I2C Bus WriteReg Error
+E (637) I2C_BUS: C:/Users/jsrin/esp/esp-adf/components/esp_peripherals/driver/i2c_bus/i2c_bus.c:101 (i2c_bus_write_bytes):I2C Bus WriteReg Error
+E (657) I2C_BUS: C:/Users/jsrin/esp/esp-adf/components/esp_peripherals/driver/i2c_bus/i2c_bus.c:101 (i2c_bus_write_bytes):I2C Bus WriteReg Error
+E (657) I2C_BUS: C:/Users/jsrin/esp/esp-adf/components/esp_peripherals/driver/i2c_bus/i2c_bus.c:101 (i2c_bus_write_bytes):I2C Bus WriteReg Error
+E (677) I2C_BUS: C:/Users/jsrin/esp/esp-adf/components/esp_peripherals/driver/i2c_bus/i2c_bus.c:101 (i2c_bus_write_bytes):I2C Bus WriteReg Error       
+E (687) I2C_BUS: C:/Users/jsrin/esp/esp-adf/components/esp_peripherals/driver/i2c_bus/i2c_bus.c:101 (i2c_bus_write_bytes):I2C Bus WriteReg Error
+E (707) I2C_BUS: C:/Users/jsrin/esp/esp-adf/components/esp_peripherals/driver/i2c_bus/i2c_bus.c:101 (i2c_bus_write_bytes):I2C Bus WriteReg Error
+E (717) I2C_BUS: C:/Users/jsrin/esp/esp-adf/components/esp_peripherals/driver/i2c_bus/i2c_bus.c:101 (i2c_bus_write_bytes):I2C Bus WriteReg Error
+E (727) I2C_BUS: C:/Users/jsrin/esp/esp-adf/components/esp_peripherals/driver/i2c_bus/i2c_bus.c:101 (i2c_bus_write_bytes):I2C Bus WriteReg Error
+E (737) I2C_BUS: C:/Users/jsrin/esp/esp-adf/components/esp_peripherals/driver/i2c_bus/i2c_bus.c:101 (i2c_bus_write_bytes):I2C Bus WriteReg Error
+E (757) I2C_BUS: C:/Users/jsrin/esp/esp-adf/components/esp_peripherals/driver/i2c_bus/i2c_bus.c:101 (i2c_bus_write_bytes):I2C Bus WriteReg Error
+E (767) I2C_BUS: C:/Users/jsrin/esp/esp-adf/components/esp_peripherals/driver/i2c_bus/i2c_bus.c:101 (i2c_bus_write_bytes):I2C Bus WriteReg Error
+E (787) I2C_BUS: C:/Users/jsrin/esp/esp-adf/components/esp_peripherals/driver/i2c_bus/i2c_bus.c:101 (i2c_bus_write_bytes):I2C Bus WriteReg Error       
+E (797) I2C_BUS: C:/Users/jsrin/esp/esp-adf/components/esp_peripherals/driver/i2c_bus/i2c_bus.c:101 (i2c_bus_write_bytes):I2C Bus WriteReg Error
+E (817) I2C_BUS: C:/Users/jsrin/esp/esp-adf/components/esp_peripherals/driver/i2c_bus/i2c_bus.c:101 (i2c_bus_write_bytes):I2C Bus WriteReg Error
+E (827) I2C_BUS: C:/Users/jsrin/esp/esp-adf/components/esp_peripherals/driver/i2c_bus/i2c_bus.c:101 (i2c_bus_write_bytes):I2C Bus WriteReg Error
+E (837) I2C_BUS: C:/Users/jsrin/esp/esp-adf/components/esp_peripherals/driver/i2c_bus/i2c_bus.c:101 (i2c_bus_write_bytes):I2C Bus WriteReg Error
+E (847) I2C_BUS: C:/Users/jsrin/esp/esp-adf/components/esp_peripherals/driver/i2c_bus/i2c_bus.c:101 (i2c_bus_write_bytes):I2C Bus WriteReg Error
+E (867) I2C_BUS: C:/Users/jsrin/esp/esp-adf/components/esp_peripherals/driver/i2c_bus/i2c_bus.c:101 (i2c_bus_write_bytes):I2C Bus WriteReg Error
+E (877) I2C_BUS: C:/Users/jsrin/esp/esp-adf/components/esp_peripherals/driver/i2c_bus/i2c_bus.c:101 (i2c_bus_write_bytes):I2C Bus WriteReg Error       
+E (887) I2C_BUS: C:/Users/jsrin/esp/esp-adf/components/esp_peripherals/driver/i2c_bus/i2c_bus.c:101 (i2c_bus_write_bytes):I2C Bus WriteReg Error
+I (917) gpio: GPIO[21]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0
+I (917) ES8388_DRIVER: init,out:02, in:00
+E (917) AUDIO_HAL: codec init failed!
+E (927) AUDIO_BOARD: C:/Users/jsrin/esp/esp-adf/components/audio_board/lyrat_v4_3/board.c:57 (audio_board_codec_init): Got NULL Pointer
+E (937) AUDIO_HAL: audio_hal handle is null
+I (937) INIT: APP COLA
+I (947) app_main: APP STARED
+I (947) tsk: TASKCREATing
+
+ PRINTF TEST 
+I (947) BusMail: Busmail Task Started
+I (957) spi: spi init returns 0
+E (957) SPI: SPI Communication Task
+I (967) INIT SUB STATE1: ENTERED
+I (967) CMD: SET FEATURES
+I (967) INIT STATE: STARTED
+1001c8c8
+Rx- 10 Rx- 0 Rx- 1 Rx- c0 Rx- c0 1006801a0401ea
+Rx- 10 Rx- 0 Rx- 1 Rx- 81 Rx- 81 Rx- 10 Rx- 0 Rx- 7 Rx- 9 Rx- 0 Rx- 1 Rx- a1 Rx- 40 Rx- 0 Rx- 1 Rx- ec 1007180114420372
+CV 9 0 1 a1 40 0 1 0 0 0 0 0 0 0 0 0 9e I (1017) INIT SUB STATE1: ENTERED
+Rx- 10 Rx- 0 Rx- 1 Rx- 82 Rx- 82 Rx- 10 Rx- 0 Rx- 8 Rx- 1a Rx- 0 Rx- 1 Rx- 15 Rx- 42 Rx- 0 Rx- 0 Rx- 3 Rx- 75 10018181
+CV 1a 0 1 15 42 0 0 3 0 0 0 0 0 0 0 0 9e I (1037) INIT SUB STATE1: ENTERED
+1007290114421384
+10018282
+Rx- 10 Rx- 0 Rx- 1 Rx- 83 Rx- 83 10073a01041107d
+Rx- 10 Rx- 0 Rx- 8 Rx- 2b Rx- 0 Rx- 1 Rx- 15 Rx- 42 Rx- 0 Rx- 1 Rx- 3 Rx- 87 CV 2b 0 1 15 42 0 1 3 0 0 0 0 0 0 0 0 9e Rx- 10 Rx- 0 Rx- 1 Rx- 84 Rx- 84 10054a0164091
+Rx- 10 Rx- 0 Rx- c Rx- 3c Rx- 0 Rx- 1 Rx- 1 Rx- 41 Rx- 0 Rx- 6 Rx- 0 Rx- 1 Rx- 0 Rx- 1 Rx- 0 Rx- 87 CV 3c 0 1 1 41 0 6 0 1 0 1 0 0 0 0 0 9e I (1127) INIT STATE: API_FP_MM_GET_REGISTRATION_COUNT_CFM
+10I (1137) TERMINAL ID COUNT: 1
+055a014409f
+I (1137) HANDSET: GET IPUI
+I (1147) REGISTERED HS ID: 1
+Rx- 10 Rx- 0 Rx- 1 Rx- 85 Rx- 85 10056a01a40b5
+Rx- 10 Rx- 0 Rx- 9 Rx- 4d Rx- 0 Rx- 1 Rx- 7 Rx- 40 Rx- 0 Rx- 0 Rx- 0 Rx- 0 Rx- 95 CV 4d 0 1 7 40 0 0 0 0 0 1 0 0 0 0 0 9e Rx- 10 Rx- 0 Rx- 1 Rx- 86 Rx- 86 10057a01146c2
+Rx- 10 Rx- 0 Rx- b Rx- 5e Rx- 0 Rx- 1 Rx- 5 Rx- 40 Rx- 0 Rx- 2 Rx- eb Rx- 7f Rx- 9f Rx- e0 Rx- 8f CV 5e 0 1 5 40 0 2 eb 7f 9f e0 0 0 0 0 0 9e Rx- 10 Rx- 0 Rx- 1 Rx- 87 Rx- 87 Rx- 10 Rx- 0 Rx- a Rx- 6f Rx- 0 Rx- 1 Rx- b Rx- 40 Rx- 0 Rx- ff Rx- ff Rx- 0 Rx- 0 1007a0114422Rx- b9 366
+CV 6f 0 1 b 40 0 ff ff 0 0 e0 0 0 0 0 0 9e I (1207) INIT STATE: API_FP_MM_GET_ACCESS_CODE_CFM
+Rx- 10 Rx- 0 Rx- 1 Rx- 80 Rx- 80 Rx- 10 Rx- 0 Rx- 1 Rx- 81 Rx- 81 Rx- 10 Rx- 0 Rx- 8 Rx- 79 Rx- 0 Rx- 1 Rx- 15 Rx- 42 Rx- 0 Rx- 2 10018383
+Rx- 3 Rx- d6 CV 79 0 1 15 42 0 2 3 0 0 e0 0 0 0 0 0 9e 10071b0114423378
+Rx- 10 Rx- 0 Rx- 1 Rx- 82 Rx- 82 Rx- 10 Rx- 0 Rx- 8 Rx- a Rx- 0 Rx- 1 Rx- 15 Rx- 42 Rx- 0 Rx- 3 Rx- 3 Rx- 68 CV a 0 1 15 42 0 3 3 0 0 e0 0 0 0 0 0 9e 10018484
+10072c010556088
+Rx- 10 Rx- 0 Rx- 1 Rx- 83 Rx- 83 Rx- 10 Rx- 0 Rx- 16 Rx- 1b Rx- 0 Rx- 1 Rx- 1 Rx- 55 Rx- 6 Rx- 4 Rx- 0 Rx- 0 Rx- 0 Rx- 0 Rx- 0 Rx- 0 Rx- ff Rx- 6 Rx- 0 Rx- 1 Rx- 10 Rx- 3 Rx- 2 Rx- 7 Rx- 10 Rx- ae CV 1b 0 1 1 55 6 4 0 0 0 0 0 0 ff 6 0 9e 10018585
+10073d019411089
+Rx- 10 Rx- 0 Rx- 1 Rx- 84 Rx- 84 Rx- 10 Rx- 0 Rx- 26 Rx- 2c Rx- 0 Rx- 1 Rx- a Rx- 41 Rx- 0 Rx- 1 Rx- 0 Rx- 3 Rx- 31 Rx- d4 Rx- 26 Rx- fd Rx- 17 Rx- 0 Rx- 18 Rx- 0 Rx- 3 Rx- 9 Rx- 0 Rx- 1 Rx- 1 Rx- 0 Rx- a Rx- 1 Rx- 2 Rx- 3 Rx- 0 Rx- 0 Rx- 1 Rx- 2 Rx- 0 Rx- 0 Rx- 4 Rx- 1b Rx- 0 Rx- 1 Rx- 0 Rx- 14 10018686
+CV 2c 0 1 a 41 0 1 0 3 31 d4 26 fd 17 0 18 9e 10018787
+10018080
+10018181
+10018282
+Rx- 10 Rx- 0 Rx- 16 Rx- 1c Rx- 0 Rx- 1 Rx- 1 Rx- 55 Rx- 6 Rx- 4 Rx- 0 Rx- 0 Rx- 0 Rx- 0 Rx- 0 Rx- 0 Rx- ff Rx- 6 Rx- 0 Rx- 1 Rx- 10 Rx- 3 Rx- 2 Rx- 7 Rx- 10 Rx- af WRONG SEQRx- 10 Rx- 0 Rx- 26 Rx- 2c Rx- 0 Rx- 1 Rx- a Rx- 41 Rx- 0 Rx- 1 Rx- 0 Rx- 3 Rx- 31 Rx- d4 Rx- 26 Rx- fd Rx- 17 Rx- 0 Rx- 18 Rx- 0 Rx- 3 Rx- 9 Rx- 0 Rx- 1 Rx- 1 Rx- 0 Rx- a Rx- 1 Rx- 2 Rx- 3 Rx- 0 Rx- 0 Rx- 1 Rx- 2 10074a0125540a6
+Rx- 0 Rx- 0 Rx- 4 Rx- 1b Rx- 0 Rx- 1 Rx- 0 Rx- 14 WRONG SEQRx- 10 Rx- 0 Rx- 1 Rx- 85 Rx- 85 Rx- 10 Rx- 0 Rx- 7 Rx- 3d Rx- 0 Rx- 1 10018383
+Rx- 3 Rx- 55 Rx- 4 Rx- 0 Rx- 9a CV 3d 0 1 3 55 4 0 0 3 31 d4 26 fd 17 0 18 9e 10018383
+10018383
+10018484
+10055c01d41ab
+Rx- 10 Rx- 0 Rx- 1 Rx- 86 Rx- 86 100126c010421010010010000b3
+Rx- 10 Rx- 0 Rx- 1 Rx- 87 Rx- 87 Rx- 10 Rx- 0 Rx- 6 Rx- 4f Rx- 0 Rx- 1 Rx- 1 Rx- 42 Rx- 0 Rx- 93 CV 4f 0 1 1 42 0 0 0 3 31 d4 26 fd 17 0 18 9e 10018585
+100a7d0125921100dd
+Rx- 10 Rx- 0 Rx- 1 Rx- 80 Rx- 80 Rx- 10 Rx- 0 Rx- 6 Rx- 58 Rx- 0 Rx- 1 Rx- 3 Rx- 59 Rx- 0 Rx- b5 CV 58 0 1 3 59 0 0 0 3 31 d4 26 fd 17 0 18 9e 10018686

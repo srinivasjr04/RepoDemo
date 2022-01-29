@@ -1,0 +1,1002 @@
+Content-Length: 0
+
+
+I (79239) SIP: [1970-01-01/00:01:09]<<======================
+I (79249) SIP: [1970-01-01/00:01:09]<<=====READ 0488 bytes==
+I (79249) SIP:
+
+BYE sip:100@192.168.0.246:17936 SIP/2.0
+Via: SIP/2.0/UDP 192.168.0.196:5060;branch=z9hG4bK-Pd1dda044j3846e59;rport
+Via: SIP/2.0/UDP 192.168.0.196:53479;received=192.168.0.196;rport=53479;branch=z9hG4bKPjd318d4d6ae054940a4d0775395a52d03
+Max-Forwards: 70
+From: <sip:200@192.168.0.196>;tag=3a9d5d7751624ca6b0d12280aca18d4a
+To: <sip:100@192.168.0.196>;tag=2041931717
+Call-ID: aeecf354804d468f8531b809876eeabc
+CSeq: 13307 BYE
+Record-Route: <sip:192.168.0.196;lr>
+Content-Length: 0
+
+
+I (79299) SIP: [1970-01-01/00:01:09]<<======================
+W (79299) VOIP_EXAMPLE: SIP_EVENT_HANGUP
+W (79309) SIP: CHANGE STATE FROM 2, TO 2, :func: sip_uas_process_req:856
+I (79309) SIP: [1970-01-01/00:01:09]=======WRITE 0579 bytes>>
+I (79319) SIP:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 192.168.0.196:5060;branch=z9hG4bK-Pd1dda044j3846e59;rport
+Via: SIP/2.0/UDP 192.168.0.196:53479;received=192.168.0.196;rport=53479;branch=z9hG4bKPjd318d4d6ae054940a4d0775395a52d03
+Record-Route: <sip:192.168.0.196;lr>
+Contact: <sip:100@192.168.0.246:17936>
+From: <sip:200@192.168.0.196>;tag=3a9d5d7751624ca6b0d12280aca18d4a
+To: <sip:100@192.168.0.196>;tag=2041931717;tag=1716424480
+Call-ID: aeecf354804d468f8531b809876eeabc
+CSeq: 13307 BYE
+Server: ESP32 SIP/2.0
+Allow: ACK, INVITE, BYE, UPDATE, CANCEL, OPTIONS, INFO
+Content-Length: 0
+
+
+I (79379) SIP: [1970-01-01/00:01:09]=======================>>
+10096b0111441e000df
+Rx- 10 Rx- 0 Rx- 1 Rx- 87 Rx- 87 Rx- 10 Rx- 0 Rx- 9 Rx- 3f Rx- 0 Rx- 1 Rx- 12 Rx- 44 Rx- 1e Rx- 0 Rx- 0 Rx- 0 Rx- b4 CV 3f 0 1 12 44 1e 0 0 0 8 0 0 0 0 0 18 26 I (79599) STATE CALL:  07
+I (79609) STATE CALL:  11
+10I (79609) STANDBY :  00
+018484
+I (79609) RELEASE CFM: ENTERING STDBY
+100a7c0125921100dcI (79619) STANDBY :  00
+
+I (79619) STATE CALL:  08
+
+ The  value of us16_PP_HS_State is 4
+100ac01259211006cRx- 10
+Rx- 0 Rx- 1 Rx- 80 Rx- 80 Rx- 10 Rx- 0 Rx- 6 Rx- 48 Rx- 0 Rx- 1 Rx- 3 Rx- 59 Rx- 0 Rx- a5 CV 48 0 1 3 59 0 0 0 0 8 0 0 0 0 0 18 26 10018585
+ The  value of us16_PP_HS_State is 4
+
+Rx- 10 Rx- 0 Rx- 1 Rx- 81 Rx- 81 Rx- 10 Rx- 0 Rx- 6 Rx- 59 Rx- 0 Rx- 1 Rx- 3 Rx- 59 Rx- 0 Rx- b6 CV 59 0 1 3 59 0 0 0 0 8 0 0 0 0 0 18 26 10018686
+ The  value of us16_PP_HS_State is 4
+
+I (79719) SIP: [1970-01-01/00:01:09]<<=====READ 0488 bytes==
+I (79719) SIP:
+
+BYE sip:100@192.168.0.246:17936 SIP/2.0
+Via: SIP/2.0/UDP 192.168.0.196:5060;branch=z9hG4bK-Pd1dda044j3846e59;rport
+Via: SIP/2.0/UDP 192.168.0.196:53479;received=192.168.0.196;rport=53479;branch=z9hG4bKPjd318d4d6ae054940a4d0775395a52d03
+Max-Forwards: 70
+From: <sip:200@192.168.0.196>;tag=3a9d5d7751624ca6b0d12280aca18d4a
+To: <sip:100@192.168.0.196>;tag=2041931717
+Call-ID: aeecf354804d468f8531b809876eeabc
+CSeq: 13307 BYE
+Record-Route: <sip:192.168.0.196;lr>
+Content-Length: 0
+
+
+I (79759) SIP: [1970-01-01/00:01:09]<<======================
+W (79769) VOIP_EXAMPLE: SIP_EVENT_HANGUP
+W (79769) SIP: CHANGE STATE FROM 2, TO 2, :func: sip_uas_process_req:856
+I (79779) SIP: [1970-01-01/00:01:09]=======WRITE 0579 bytes>>
+I (79779) SIP:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 192.168.0.196:5060;branch=z9hG4bK-Pd1dda044j3846e59;rport
+Via: SIP/2.0/UDP 192.168.0.196:53479;received=192.168.0.196;rport=53479;branch=z9hG4bKPjd318d4d6ae054940a4d0775395a52d03
+Record-Route: <sip:192.168.0.196;lr>
+Contact: <sip:100@192.168.0.246:17936>
+From: <sip:200@192.168.0.196>;tag=3a9d5d7751624ca6b0d12280aca18d4a
+To: <sip:100@192.168.0.196>;tag=2041931717;tag=1950851554
+Call-ID: aeecf354804d468f8531b809876eeabc
+CSeq: 13307 BYE
+Server: ESP32 SIP/2.0
+Allow: ACK, INVITE, BYE, UPDATE, CANCEL, OPTIONS, INFO
+Content-Length: 0
+
+
+I (79839) SIP: [1970-01-01/00:01:09]=======================>>
+10091e0111441e00092
+Rx- 10 Rx- 0 Rx- 1 Rx- 82 Rx- 82 Rx- 10 Rx- 0 Rx- 9 Rx- 6a Rx- 0 Rx- 1 Rx- 12 Rx- 44 Rx- 1e Rx- 2 Rx- 0 Rx- 0 Rx- e1 CV 6a 0 1 12 44 1e 2 0 0 8 0 0 0 0 0 18 26
+ The  value of us16_PP_HS_State is 4
+10018787
+I (94229) SIP: [1970-01-01/00:01:16]<<=====READ 1107 bytes==
+I (94229) SIP:
+
+INVITE sip:100@192.168.0.246:17936 SIP/2.0
+Via: SIP/2.0/UDP 192.168.0.196:5060;branch=z9hG4bK-Pcebe6847j9f28788;rport
+Via: SIP/2.0/UDP 192.168.0.196:53479;received=192.168.0.196;rport=53479;branch=z9hG4bKPjc9efb2e867884879818ed18b4a8d9e98
+Max-Forwards: 70
+From: <sip:200@192.168.0.196>;tag=9e29079383e94e64b5237d8ddd2aa0e0
+To: <sip:100@192.168.0.196>
+Contact: <sip:200@192.168.0.196:53479;ob>
+Call-ID: ed850e8d5d744d8c900e8ec9f7868ac7
+CSeq: 30580 INVITE
+Session-Expires: 1800
+Min-SE: 90
+Allow: PRACK, INVITE, ACK, BYE, CANCEL, UPDATE, INFO, SUBSCRIBE, NOTIFY, REFER, MESSAGE, OPTIONS
+Supported: replaces, 100rel, timer, norefersub
+Record-Route: <sip:192.168.0.196;lr>
+User-Agent: MicroSIP/3.20.5
+Content-Type: application/sdp
+Content-Length: 342
+
+v=0
+o=- 3846055556 3846055556 IN IP4 192.168.0.196
+s=pjmedia
+b=AS:84
+t=0 0
+a=X-nat:0
+m=audio 4004 RTP/AVP 8 0 101
+c=IN IP4 192.168.0.196
+b=TIAS:64000
+a=rtcp:4005 IN IP4 192.168.0.196
+a=sendrecv
+a=rtpmap:8 PCMA/8000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-16
+a=ssrc:574622606 cname:5cd20c1b45bf618a
+
+I (94329) SIP: [1970-01-01/00:01:16]<<======================
+I (94339) SIP: Remote RTP port=4004
+I (94339) SIP: Remote RTP addr=192.168.0.196
+I (94349) SIP: call from 200
+I (94349) SIP: [1970-01-01/00:01:16]=======WRITE 0572 bytes>>
+I (94359) SIP:
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/UDP 192.168.0.196:5060;branch=z9hG4bK-Pcebe6847j9f28788;rport
+Via: SIP/2.0/UDP 192.168.0.196:53479;received=192.168.0.196;rport=53479;branch=z9hG4bKPjc9efb2e867884879818ed18b4a8d9e98
+Record-Route: <sip:192.168.0.196;lr>
+Contact: <sip:100@192.168.0.246:17936>
+From: <sip:200@192.168.0.196>;tag=9e29079383e94e64b5237d8ddd2aa0e0
+To: <sip:100@192.168.0.196>;tag=-1091664729
+Call-ID: ed850e8d5d744d8c900e8ec9f7868ac7
+CSeq: 30580 INVITE
+Server: ESP32 SIP/2.0
+Allow: ACK, INVITE, BYE, UPDATE, CANCEL, OPTIONS, INFO
+Content-Length: 0
+
+
+I (94409) SIP: [1970-01-01/00:01:16]=======================>>
+I (94419) SIP: [1970-01-01/00:01:16]=======WRITE 0573 bytes>>
+I (94419) SIP:
+
+SIP/2.0 180 Ringing
+Via: SIP/2.0/UDP 192.168.0.196:5060;branch=z9hG4bK-Pcebe6847j9f28788;rport
+Via: SIP/2.0/UDP 192.168.0.196:53479;received=192.168.0.196;rport=53479;branch=z9hG4bKPjc9efb2e867884879818ed18b4a8d9e98
+Record-Route: <sip:192.168.0.196;lr>
+Contact: <sip:100@192.168.0.246:17936>
+From: <sip:200@192.168.0.196>;tag=9e29079383e94e64b5237d8ddd2aa0e0
+To: <sip:100@192.168.0.196>;tag=-1023821955
+Call-ID: ed850e8d5d744d8c900e8ec9f7868ac7
+CSeq: 30580 INVITE
+Server: ESP32 SIP/2.0
+Allow: ACK, INVITE, BYE, UPDATE, CANCEL, OPTIONS, INFO
+Content-Length: 0
+
+
+I (94479) SIP: [1970-01-01/00:01:16]=======================>>
+W (94479) SIP: CHANGE STATE FROM 2, TO 16, :func: _sip_uas_process_req_invite:817
+I (95589) VOIP_EXAMPLE: ringing... RemotePhoneNum 200
+I (95589) STANDBY :  01
+I (95589) STANDBY :  07
+INCOMING CALL INITIATED
+DESTINATION ID = 1
+I (95589) SIZE: 4
+I (95589) INCOMING: FPCCSETU REQ
+I (95599) STANDBY :  26
+I (95599) STATE CALL:  00
+I (95599) STATE CALL:  01
+100162f0124410100000084050100211e8
+Rx- 10 Rx- 0 Rx- 1 Rx- 83 Rx- 83 Rx- 10 Rx- 0 Rx- e Rx- 7b Rx- 0 Rx- 1 Rx- 3 Rx- 44 Rx- 1d Rx- 3 Rx- 0 Rx- 0 Rx- 8 Rx- 0 Rx- 0 Rx- 0 Rx- 0 Rx- eb CV 7b 0 1 3 44 1d 3 0 0 8 0 0 0 0 0 18 26 I (95619) STATE CALL:  03
+100103f01259231e830e832ffff77HANDSET ID = 1
+
+CCSETUP CFM -PRESENT
+I (95639) STATE CALL:  04
+
+ The  value of us16_PP_HS_State is 4
+Rx- 10 Rx- 0 Rx- 1 Rx- 84 Rx- 84 Rx- 10 Rx- 0 Rx- 6 Rx- c Rx- 0 Rx- 1 Rx- 3 Rx- 59 Rx- 0 10018080Rx- 69
+CV c 0 1 3 59 0 3 0 0 8 0 0 0 0 0 18 26 
+ The  value of us16_PP_HS_State is 4
+Rx- 10 Rx- 0 Rx- 1 Rx- 85 Rx- 85 Rx- 10 Rx- 0 Rx- 6 Rx- 1d Rx- 0 Rx- 1 Rx- 3 Rx- 59 Rx- 0 Rx- 7a 100104801259231e830e832ffff80
+CV 1d 0 1 3 59 0 3 0 0 8 0 0 0 0 0 18 26 
+ The  value of us16_PP_HS_State is 4
+10018181
+10018282
+Rx- 10 Rx- 0 Rx- 8 Rx- 2d Rx- 0 Rx- 1 Rx- 4 Rx- 44 Rx- 1d Rx- 0 Rx- 0 Rx- 93 CV 2d 0 1 4 44 1d 0 0 0 8 0 0 0 0 0 18 26 I (96339) STATE CALL:  03
+I (96339) CC ALERT IND: 1
+I (96349) INCOMING: CALL RECEIVED
+CC ALERT IND -CALL RECEIVED
+CALLING PART NUMBER SENTI (96349) STATE CALL:  04
+10
+ The  value of us16_PP_HS_State is 4
+018383
+1001c5b012e441dff3f12050f3901a5443532049434f4d3031f9
+Rx- 10 Rx- 0 Rx- 1 Rx- 86 Rx- 86 100f6b012e441dff3f50d020350
+Rx- 10 Rx- 0 Rx- 1 Rx- 87 Rx- 87 100107b01259231e830e832ffffb3
+Rx- 10 Rx- 0 Rx- 1 Rx- 80 Rx- 80 Rx- 10 Rx- 0 Rx- 6 Rx- 38 Rx- 0 Rx- 1 Rx- 3 Rx- 59 Rx- 0 Rx- 95 CV 38 0 1 3 59 0 0 0 0 8 0 0 0 0 0 18 26 
+ The  value of us16_PP_HS_State is 4
+10018484
+I (96609) VOIP_EXAMPLE: ringing... RemotePhoneNum 200
+I (97609) VOIP_EXAMPLE: ringing... RemotePhoneNum 200
+I (98609) VOIP_EXAMPLE: ringing... RemotePhoneNum 200
+I (99609) VOIP_EXAMPLE: ringing... RemotePhoneNum 200
+I (100609) VOIP_EXAMPLE: ringing... RemotePhoneNum 200
+Rx- 10 Rx- 0 Rx- 11 Rx- 48 Rx- 0 Rx- 1 Rx- 7 Rx- 44 Rx- 1d Rx- 9 Rx- 0 Rx- 1 Rx- 0 Rx- 6 Rx- 1 Rx- 1 Rx- 2 Rx- 0 Rx- 0 Rx- 4 Rx- c9 CV 48 0 1 7 44 1d 9 0 1 0 6 1 1 2 0 0 26 I (101199) STATE CALL:  03
+CC CONNECT IND -USER ACCEPTED
+10018585
+Line ID = 0PCM FORMAT = 1I (101209) CC CONNECT RES: CMD SENDING
+1007d0110420161
+I (101219) STATE CALL:  04
+
+ The key pressed is -47 and value of us16_PP_HS_State is 6
+10091d018441d00087Rx- 10 
+Rx- 0 Rx- 1 Rx- 81 Rx- 81 Rx- 10 Rx- 0 Rx- 8 Rx- 59 Rx- 0 Rx- 1 Rx- 11 Rx- 42 Rx- 0 Rx- 0 Rx- 1 Rx- ae CV 59 0 1 11 42 0 0 1 1 0 6 1 1 2 0 0 26 100142d012e441dff3fa0d02
+ The key pressed is -47 and value of us16_PP_HS_State is 6
+031002152f
+Rx- 10 Rx- 0 Rx- 1 Rx- 82 Rx- 82 Rx- 10 Rx- 0 Rx- 1 Rx- 83 Rx- 83 100103d01259231e830e832ffff75
+Rx- 10 Rx- 0 Rx- 1 Rx- 84 Rx- 84 Rx- 10 Rx- 0 Rx- 6 Rx- 6c Rx- 0 Rx- 1 Rx- 3 Rx- 59 Rx- 0 Rx- c9 CV 6c 0 1 3 59 0 0 1 1 0 6 1 1 2 0 0 26 
+ The key pressed is -47 and value of us16_PP_HS_State is 6
+10018686
+10018787
+I (101309) SIP: [1970-01-01/00:01:20]=======WRITE 0760 bytes>>
+I (101309) SIP: 
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 192.168.0.196:5060;branch=z9hG4bK-Pcebe6847j9f28788;rport
+Via: SIP/2.0/UDP 192.168.0.196:53479;received=192.168.0.196;rport=53479;branch=z9hG4bKPjc9efb2e867884879818ed18b4a8d9e98
+Record-Route: <sip:192.168.0.196;lr>
+Contact: <sip:100@192.168.0.246:17936>
+From: <sip:200@192.168.0.196>;tag=9e29079383e94e64b5237d8ddd2aa0e0
+To: <sip:100@192.168.0.196>;tag=-1243429288
+Call-ID: ed850e8d5d744d8c900e8ec9f7868ac7
+CSeq: 30580 INVITE
+Server: ESP32 SIP/2.0
+Allow: ACK, INVITE, BYE, UPDATE, CANCEL, OPTIONS, INFO
+Content-Length: 159
+Content-Type: application/sdp
+
+v=0
+o=Z 0 3 IN IP4 192.168.0.246
+s=Z
+c=IN IP4 192.168.0.246
+t=0 0
+m=audio 32387 RTP/AVP 8 101
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+
+
+I (101369) SIP: [1970-01-01/00:01:20]=======================>>
+I (101479) SIP: [1970-01-01/00:01:20]<<=====READ 0451 bytes==
+I (101479) SIP:
+
+ACK sip:100@192.168.0.246:17936 SIP/2.0
+Via: SIP/2.0/UDP 192.168.0.196:5060;branch=z9hG4bK-P170ca24aj752e2f8;rport
+Via: SIP/2.0/UDP 192.168.0.196:53479;received=192.168.0.196;rport=53479;branch=z9hG4bKPj177502cea22f48a8ace2d35dc7bd37e4
+Max-Forwards: 70
+From: <sip:200@192.168.0.196>;tag=9e29079383e94e64b5237d8ddd2aa0e0
+To: <sip:100@192.168.0.196>;tag=-1243429288
+Call-ID: ed850e8d5d744d8c900e8ec9f7868ac7
+CSeq: 30580 ACK
+Content-Length: 0
+
+
+I (101519) SIP: [1970-01-01/00:01:20]<<======================
+W (101529) SIP: CHANGE STATE FROM 16, TO 32, :func: sip_uas_process_req:886
+I (101529) VOIP_EXAMPLE: SIP_EVENT_AUDIO_SESSION_BEGIN
+I (101539) I2S: DMA Malloc info, datalen=blocksize=600, dma_buf_count=3
+I (101539) I2S: DMA Malloc info, datalen=blocksize=600, dma_buf_count=3
+I (101549) I2S: PLL_D2: Req RATE: 8000, real rate: 8012.000, BITS: 16, CLKM: 78, BCK: 8, MCLK: 2048000.000, SCLK: 256384.000000, diva: 64, divb: 8
+I (101559) LYRAT_MINI_V1_1: I2S1, MCLK output by GPIO0
+I (101569) AUDIO_PIPELINE: link el->rb, el:0x3ffd5260, tag:i2s, rb:0x3ffd5fb4
+I (101579) AUDIO_PIPELINE: link el->rb, el:0x3ffd55d0, tag:filter, rb:0x3ffd80f0
+I (101589) AUDIO_PIPELINE: link el->rb, el:0x3ffd5900, tag:sip_enc, rb:0x3ffd9114
+I (101589) AUDIO_ELEMENT: [i2s-0x3ffd5260] Element task created
+I (101599) AUDIO_ELEMENT: [filter-0x3ffd55d0] Element task created
+I (101609) AUDIO_ELEMENT: [sip_enc-0x3ffd5900] Element task created
+I (101609) AUDIO_ELEMENT: [raw-0x3ffd5c30] Element task created
+I (101619) AUDIO_PIPELINE: Func:audio_pipeline_run, Line:359, MEM Total:137480 Bytes
+
+I (101629) AUDIO_ELEMENT: [i2s] AEL_MSG_CMD_RESUME,state:1
+I (101639) I2S_STREAM: AUDIO_STREAM_READER,Rate:8000,ch:1
+I (101639) I2S: PLL_D2: Req RATE: 8000, real rate: 8012.000, BITS: 16, CLKM: 78, BCK: 8, MCLK: 2048000.000, SCLK: 256384.000000, diva: 64, divb: 8
+I (101659) AUDIO_ELEMENT: [filter] AEL_MSG_CMD_RESUME,state:1
+I (101659) AUDIO_ELEMENT: [sip_enc] AEL_MSG_CMD_RESUME,state:1
+I (101659) RSP_FILTER: sample rate of source data : 8000, channel of source data : 1, sample rate of destination data : 8000, channel of destination data : 1
+I (101669) AUDIO_PIPELINE: Pipeline started
+I (101689) VOIP_EXAMPLE:  SIP recorder has been created
+W (101689) I2S: I2S driver already installed
+I (101699) LYRAT_MINI_V1_1: I2S1, MCLK output by GPIO0
+I (101709) AUDIO_PIPELINE: link el->rb, el:0x3ffdebb4, tag:raw, rb:0x3ffdf994
+I (101709) AUDIO_PIPELINE: link el->rb, el:0x3ffdeeec, tag:sip_dec, rb:0x3ffdfacc
+I (101719) AUDIO_PIPELINE: link el->rb, el:0x3ffdf26c, tag:filter, rb:0x3ffdfc04
+I (101729) AUDIO_ELEMENT: [raw-0x3ffdebb4] Element task created
+I (101739) AUDIO_ELEMENT: [sip_dec-0x3ffdeeec] Element task created
+I (101739) AUDIO_ELEMENT: [filter-0x3ffdf26c] Element task created
+I (101749) AUDIO_ELEMENT: [i2s-0x3ffdf608] Element task created
+I (101759) AUDIO_PIPELINE: Func:audio_pipeline_run, Line:359, MEM Total:102900 Bytes
+
+I (101759) AUDIO_ELEMENT: [sip_dec] AEL_MSG_CMD_RESUME,state:1
+I (101769) AUDIO_ELEMENT: [filter] AEL_MSG_CMD_RESUME,state:1
+I (101769) CODEC_ELEMENT_HELPER: The element is 0x3ffdeeec. The reserve data 2 is 0x0.
+I (101779) AUDIO_ELEMENT: [i2s] AEL_MSG_CMD_RESUME,state:1
+I (101789) I2S_STREAM: AUDIO_STREAM_WRITER
+I (101799) AUDIO_PIPELINE: Pipeline started
+I (101799) VOIP_EXAMPLE: SIP player has been created
+I (101809) SIP_RTP: receive task, local addr=192.168.0.246:32387
+:40041809) SIP_RTP: send task, remote addr=192.168.0.196
+I (101829) RSP_FILTER: sample rate of source data : 8000, channel of source data : 1, sample rate of destination data : 8000, channel of destination data : 1
+I (102329) SIP: [1970-01-01/00:01:20]=======WRITE 0568 bytes>>
+I (102329) SIP:
+
+OPTIONS sip:100@192.168.0.196:5060 SIP/2.0
+Via: SIP/2.0/UDP 192.168.0.246:17936;branch=z9hG4bK-1432310482;rport
+From: <sip:100@192.168.0.196:5060>;tag=-60763383
+To: <sip:100@192.168.0.196:5060>
+Contact: <sip:100@192.168.0.246:17936>
+Max-Forwards: 30
+Call-ID: ed850e8d5d744d8c900e8ec9f7868ac7
+CSeq: 1 OPTIONS
+Expires: 3600
+User-Agent: ESP32 SIP/2.0
+Content-Length: 0
+Allow: INVITE, ACK, CANCEL, BYE, UPDATE, REFER, MESSAGE, OPTIONS, INFO, SUBSCRIBE
+Supported: replaces, norefersub, extended-refer, timer, X-cisco-serviceuri
+Allow-Events: presence, kpml
+
+
+I (102379) SIP: [1970-01-01/00:01:20]=======================>>
+I (102409) SIP: [1970-01-01/00:01:20]<<=====READ 0495 bytes==
+I (102409) SIP:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 192.168.0.196:53479;received=192.168.0.196;rport=53479;branch=z9hG4bKPjc9efb2e867884879818ed18b4a8d9e98
+From: <sip:100@192.168.0.196:5060>;tag=-60763383
+To: <sip:100@192.168.0.196>;tag=ef8e58ca
+Call-ID: ed850e8d5d744d8c900e8ec9f7868ac7
+CSeq: 1 OPTIONS
+Contact: <sip:100@192.168.0.196:5060>
+Date: Tue, 16 Nov 2021 07:16:04 GMT
+Allow: INVITE, ACK, CANCEL, OPTIONS, BYE, REFER, SUBSCRIBE, NOTIFY, INFO, PUBLISH
+Accept: application/sdp
+Content-Length: 0
+
+
+I (102449) SIP: [1970-01-01/00:01:20]<<======================
+Rx- 10 Rx- 0 Rx- c Rx- 7c Rx- 0 Rx- 1 Rx- 2d Rx- 44 Rx- 1d Rx- 4 Rx- 0 Rx- 2 Rx- 0 Rx- 1 Rx- 31 Rx- 43 CV 7c 0 1 2d 44 1d 4 0 2 0 1 31 1 2 0 0 26 
+ The key pressed is 1 and value of us16_PP_HS_State is 6
+10018080
+Rx- 10 Rx- 0 Rx- c Rx- c Rx- 0 Rx- 1 Rx- 2d Rx- 44 Rx- 1d Rx- 4 Rx- 0 Rx- 2 Rx- 0 Rx- 1 Rx- 32 Rx- d4 CV c 0 1 2d 44 1d 4 0 2 0 1 32 1 2 0 0 26 
+ The key pressed is 2 and value of us16_PP_HS_State is 6
+10018181
+Rx- 10 Rx- 0 Rx- c Rx- 1c Rx- 0 Rx- 1 Rx- 2d Rx- 44 Rx- 1d Rx- 4 Rx- 0 Rx- 2 Rx- 0 Rx- 1 Rx- 33 Rx- e5 CV 1c 0 1 2d 44 1d 4 0 2 0 1 33 1 2 0 0 26 
+ The key pressed is 3 and value of us16_PP_HS_State is 6
+10018282
+Rx- 10 Rx- 0 Rx- c Rx- 2c Rx- 0 Rx- 1 Rx- 2d Rx- 44 Rx- 1d Rx- 4 Rx- 0 Rx- 2 Rx- 0 Rx- 1 Rx- 34 Rx- f6 CV 2c 0 1 2d 44 1d 4 0 2 0 1 34 1 2 0 0 26 
+ The key pressed is 4 and value of us16_PP_HS_State is 6
+10018383
+Rx- 10 Rx- 0 Rx- c Rx- 3c Rx- 0 Rx- 1 Rx- 2d Rx- 44 Rx- 1d Rx- 4 Rx- 0 Rx- 2 Rx- 0 Rx- 1 Rx- 35 Rx- 7 CV 3c 0 1 2d 44 1d 4 0 2 0 1 35 1 2 0 0 26 
+ The key pressed is 5 and value of us16_PP_HS_State is 6
+10018484
+Rx- 10 Rx- 0 Rx- c Rx- 4c Rx- 0 Rx- 1 Rx- 2d Rx- 44 Rx- 1d Rx- 4 Rx- 0 Rx- 2 Rx- 0 Rx- 1 Rx- 36 Rx- 18 CV 4c 0 1 2d 44 1d 4 0 2 0 1 36 1 2 0 0 26 
+ The key pressed is 6 and value of us16_PP_HS_State is 6
+10018585
+Rx- 10 Rx- 0 Rx- c Rx- 5c Rx- 0 Rx- 1 Rx- 2d Rx- 44 Rx- 1d Rx- 4 Rx- 0 Rx- 2 Rx- 0 Rx- 1 Rx- 37 Rx- 29 CV 5c 0 1 2d 44 1d 4 0 2 0 1 37 1 2 0 0 26 
+ The key pressed is 7 and value of us16_PP_HS_State is 6
+10018686
+Rx- 10 Rx- 0 Rx- c Rx- 6c Rx- 0 Rx- 1 Rx- 2d Rx- 44 Rx- 1d Rx- 4 Rx- 0 Rx- 2 Rx- 0 Rx- 1 Rx- 38 Rx- 3a CV 6c 0 1 2d 44 1d 4 0 2 0 1 38 1 2 0 0 26 
+ The key pressed is 8 and value of us16_PP_HS_State is 6
+10018787
+Rx- 10 Rx- 0 Rx- c Rx- 7c Rx- 0 Rx- 1 Rx- 2d Rx- 44 Rx- 1d Rx- 4 Rx- 0 Rx- 2 Rx- 0 Rx- 1 Rx- 39 Rx- 4b CV 7c 0 1 2d 44 1d 4 0 2 0 1 39 1 2 0 0 26 
+ The key pressed is 9 and value of us16_PP_HS_State is 6
+10018080
+Rx- 10 Rx- 0 Rx- c Rx- c Rx- 0 Rx- 1 Rx- 2d Rx- 44 Rx- 1d Rx- 4 Rx- 0 Rx- 2 Rx- 0 Rx- 1 Rx- 30 Rx- d2 CV c 0 1 2d 44 1d 4 0 2 0 1 30 1 2 0 0 26 
+ The key pressed is 0 and value of us16_PP_HS_State is 6
+10018181
+I (135259) SIP: [1970-01-01/00:02:07]=======WRITE 0569 bytes>>
+I (135259) SIP:
+
+OPTIONS sip:100@192.168.0.196:5060 SIP/2.0
+Via: SIP/2.0/UDP 192.168.0.246:17936;branch=z9hG4bK-1698616307;rport
+From: <sip:100@192.168.0.196:5060>;tag=1349826280
+To: <sip:100@192.168.0.196:5060>
+Contact: <sip:100@192.168.0.246:17936>
+Max-Forwards: 30
+Call-ID: ed850e8d5d744d8c900e8ec9f7868ac7
+CSeq: 1 OPTIONS
+Expires: 3600
+User-Agent: ESP32 SIP/2.0
+Content-Length: 0
+Allow: INVITE, ACK, CANCEL, BYE, UPDATE, REFER, MESSAGE, OPTIONS, INFO, SUBSCRIBE
+Supported: replaces, norefersub, extended-refer, timer, X-cisco-serviceuri
+Allow-Events: presence, kpml
+
+
+I (135309) SIP: [1970-01-01/00:02:07]=======================>>
+I (135329) SIP: [1970-01-01/00:02:07]<<=====READ 0473 bytes==
+I (135339) SIP:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 192.168.0.246:17936;branch=z9hG4bK-1698616307;received=192.168.0.246;rport=17936
+From: <sip:100@192.168.0.196:5060>;tag=1349826280
+To: <sip:100@192.168.0.196>;tag=72d8ad8c
+Call-ID: ed850e8d5d744d8c900e8ec9f7868ac7
+CSeq: 1 OPTIONS
+Contact: <sip:100@192.168.0.196:5060>
+Date: Tue, 16 Nov 2021 07:16:37 GMT
+Allow: INVITE, ACK, CANCEL, OPTIONS, BYE, REFER, SUBSCRIBE, NOTIFY, INFO, PUBLISH
+Accept: application/sdp
+Content-Length: 0
+
+
+I (135379) SIP: [1970-01-01/00:02:07]<<======================
+I (168189) SIP: [1970-01-01/00:02:23]=======WRITE 0569 bytes>>
+I (168189) SIP:
+
+OPTIONS sip:100@192.168.0.196:5060 SIP/2.0
+Via: SIP/2.0/UDP 192.168.0.246:17936;branch=z9hG4bK-874130524;rport
+From: <sip:100@192.168.0.196:5060>;tag=-2030027510
+To: <sip:100@192.168.0.196:5060>
+Contact: <sip:100@192.168.0.246:17936>
+Max-Forwards: 30
+Call-ID: ed850e8d5d744d8c900e8ec9f7868ac7
+CSeq: 1 OPTIONS
+Expires: 3600
+User-Agent: ESP32 SIP/2.0
+Content-Length: 0
+Allow: INVITE, ACK, CANCEL, BYE, UPDATE, REFER, MESSAGE, OPTIONS, INFO, SUBSCRIBE
+Supported: replaces, norefersub, extended-refer, timer, X-cisco-serviceuri
+Allow-Events: presence, kpml
+
+
+I (168239) SIP: [1970-01-01/00:02:23]=======================>>
+I (168249) SIP: [1970-01-01/00:02:23]<<=====READ 0473 bytes==
+I (168249) SIP:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 192.168.0.246:17936;branch=z9hG4bK-874130524;received=192.168.0.246;rport=17936
+From: <sip:100@192.168.0.196:5060>;tag=-2030027510
+To: <sip:100@192.168.0.196>;tag=057a16fe
+Call-ID: ed850e8d5d744d8c900e8ec9f7868ac7
+CSeq: 1 OPTIONS
+Contact: <sip:100@192.168.0.196:5060>
+Date: Tue, 16 Nov 2021 07:17:10 GMT
+Allow: INVITE, ACK, CANCEL, OPTIONS, BYE, REFER, SUBSCRIBE, NOTIFY, INFO, PUBLISH
+Accept: application/sdp
+Content-Length: 0
+
+
+I (168299) SIP: [1970-01-01/00:02:23]<<======================
+I (201109) SIP: [1970-01-01/00:03:10]=======WRITE 0569 bytes>>
+I (201109) SIP:
+
+OPTIONS sip:100@192.168.0.196:5060 SIP/2.0
+Via: SIP/2.0/UDP 192.168.0.246:17936;branch=z9hG4bK--1213608629;rport
+From: <sip:100@192.168.0.196:5060>;tag=295279428
+To: <sip:100@192.168.0.196:5060>
+Contact: <sip:100@192.168.0.246:17936>
+Max-Forwards: 30
+Call-ID: ed850e8d5d744d8c900e8ec9f7868ac7
+CSeq: 1 OPTIONS
+Expires: 3600
+User-Agent: ESP32 SIP/2.0
+Content-Length: 0
+Allow: INVITE, ACK, CANCEL, BYE, UPDATE, REFER, MESSAGE, OPTIONS, INFO, SUBSCRIBE
+Supported: replaces, norefersub, extended-refer, timer, X-cisco-serviceuri
+Allow-Events: presence, kpml
+
+
+I (201159) SIP: [1970-01-01/00:03:10]=======================>>
+I (201209) SIP: [1970-01-01/00:03:10]<<=====READ 0473 bytes==
+I (201209) SIP:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 192.168.0.246:17936;branch=z9hG4bK--1213608629;received=192.168.0.246;rport=17936
+From: <sip:100@192.168.0.196:5060>;tag=295279428
+To: <sip:100@192.168.0.196>;tag=22bc340f
+Call-ID: ed850e8d5d744d8c900e8ec9f7868ac7
+CSeq: 1 OPTIONS
+Contact: <sip:100@192.168.0.196:5060>
+Date: Tue, 16 Nov 2021 07:17:43 GMT
+Allow: INVITE, ACK, CANCEL, OPTIONS, BYE, REFER, SUBSCRIBE, NOTIFY, INFO, PUBLISH
+Accept: application/sdp
+Content-Length: 0
+
+
+I (201249) SIP: [1970-01-01/00:03:10]<<======================
+I (234059) SIP: [1970-01-01/00:03:26]=======WRITE 0568 bytes>>
+I (234059) SIP:
+
+OPTIONS sip:100@192.168.0.196:5060 SIP/2.0
+Via: SIP/2.0/UDP 192.168.0.246:17936;branch=z9hG4bK-639892505;rport
+From: <sip:100@192.168.0.196:5060>;tag=-378697446
+To: <sip:100@192.168.0.196:5060>
+Contact: <sip:100@192.168.0.246:17936>
+Max-Forwards: 30
+Call-ID: ed850e8d5d744d8c900e8ec9f7868ac7
+CSeq: 1 OPTIONS
+Expires: 3600
+User-Agent: ESP32 SIP/2.0
+Content-Length: 0
+Allow: INVITE, ACK, CANCEL, BYE, UPDATE, REFER, MESSAGE, OPTIONS, INFO, SUBSCRIBE
+Supported: replaces, norefersub, extended-refer, timer, X-cisco-serviceuri
+Allow-Events: presence, kpml
+
+
+I (234109) SIP: [1970-01-01/00:03:26]=======================>>
+I (234149) SIP: [1970-01-01/00:03:26]<<=====READ 0472 bytes==
+I (234149) SIP:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 192.168.0.246:17936;branch=z9hG4bK-639892505;received=192.168.0.246;rport=17936
+From: <sip:100@192.168.0.196:5060>;tag=-378697446
+To: <sip:100@192.168.0.196>;tag=a48863f0
+Call-ID: ed850e8d5d744d8c900e8ec9f7868ac7
+CSeq: 1 OPTIONS
+Contact: <sip:100@192.168.0.196:5060>
+Date: Tue, 16 Nov 2021 07:18:16 GMT
+Allow: INVITE, ACK, CANCEL, OPTIONS, BYE, REFER, SUBSCRIBE, NOTIFY, INFO, PUBLISH
+Accept: application/sdp
+Content-Length: 0
+
+
+I (234189) SIP: [1970-01-01/00:03:26]<<======================
+I (266899) SIP: [1970-01-01/00:04:13]=======WRITE 0570 bytes>>
+I (266899) SIP:
+
+OPTIONS sip:100@192.168.0.196:5060 SIP/2.0
+Via: SIP/2.0/UDP 192.168.0.246:17936;branch=z9hG4bK--1563057203;rport
+From: <sip:100@192.168.0.196:5060>;tag=1399456379
+To: <sip:100@192.168.0.196:5060>
+Contact: <sip:100@192.168.0.246:17936>
+Max-Forwards: 30
+Call-ID: ed850e8d5d744d8c900e8ec9f7868ac7
+CSeq: 1 OPTIONS
+Expires: 3600
+User-Agent: ESP32 SIP/2.0
+Content-Length: 0
+Allow: INVITE, ACK, CANCEL, BYE, UPDATE, REFER, MESSAGE, OPTIONS, INFO, SUBSCRIBE
+Supported: replaces, norefersub, extended-refer, timer, X-cisco-serviceuri
+Allow-Events: presence, kpml
+
+
+I (266949) SIP: [1970-01-01/00:04:13]=======================>>
+I (267029) SIP: [1970-01-01/00:04:13]<<=====READ 0474 bytes==
+I (267029) SIP:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 192.168.0.246:17936;branch=z9hG4bK--1563057203;received=192.168.0.246;rport=17936
+From: <sip:100@192.168.0.196:5060>;tag=1399456379
+To: <sip:100@192.168.0.196>;tag=bdf5f508
+Call-ID: ed850e8d5d744d8c900e8ec9f7868ac7
+CSeq: 1 OPTIONS
+Contact: <sip:100@192.168.0.196:5060>
+Date: Tue, 16 Nov 2021 07:18:49 GMT
+Allow: INVITE, ACK, CANCEL, OPTIONS, BYE, REFER, SUBSCRIBE, NOTIFY, INFO, PUBLISH
+Accept: application/sdp
+Content-Length: 0
+
+
+I (267069) SIP: [1970-01-01/00:04:13]<<======================
+I (299879) SIP: [1970-01-01/00:04:29]=======WRITE 0568 bytes>>
+I (299879) SIP:
+
+OPTIONS sip:100@192.168.0.196:5060 SIP/2.0
+Via: SIP/2.0/UDP 192.168.0.246:17936;branch=z9hG4bK-965560946;rport
+From: <sip:100@192.168.0.196:5060>;tag=1816671728
+To: <sip:100@192.168.0.196:5060>
+Contact: <sip:100@192.168.0.246:17936>
+Max-Forwards: 30
+Call-ID: ed850e8d5d744d8c900e8ec9f7868ac7
+CSeq: 1 OPTIONS
+Expires: 3600
+User-Agent: ESP32 SIP/2.0
+Content-Length: 0
+Allow: INVITE, ACK, CANCEL, BYE, UPDATE, REFER, MESSAGE, OPTIONS, INFO, SUBSCRIBE
+Supported: replaces, norefersub, extended-refer, timer, X-cisco-serviceuri
+Allow-Events: presence, kpml
+
+
+I (299929) SIP: [1970-01-01/00:04:29]=======================>>
+I (299949) SIP: [1970-01-01/00:04:29]<<=====READ 0472 bytes==
+I (299949) SIP:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 192.168.0.246:17936;branch=z9hG4bK-965560946;received=192.168.0.246;rport=17936
+From: <sip:100@192.168.0.196:5060>;tag=1816671728
+To: <sip:100@192.168.0.196>;tag=d614865f
+Call-ID: ed850e8d5d744d8c900e8ec9f7868ac7
+CSeq: 1 OPTIONS
+Contact: <sip:100@192.168.0.196:5060>
+Date: Tue, 16 Nov 2021 07:19:22 GMT
+Allow: INVITE, ACK, CANCEL, OPTIONS, BYE, REFER, SUBSCRIBE, NOTIFY, INFO, PUBLISH
+Accept: application/sdp
+Content-Length: 0
+
+
+I (299989) SIP: [1970-01-01/00:04:29]<<======================
+I (332499) SIP: [1970-01-01/00:05:15]=======WRITE 0567 bytes>>
+I (332499) SIP:
+
+OPTIONS sip:100@192.168.0.196:5060 SIP/2.0
+Via: SIP/2.0/UDP 192.168.0.246:17936;branch=z9hG4bK-602019343;rport
+From: <sip:100@192.168.0.196:5060>;tag=-30330557
+To: <sip:100@192.168.0.196:5060>
+Contact: <sip:100@192.168.0.246:17936>
+Max-Forwards: 30
+Call-ID: ed850e8d5d744d8c900e8ec9f7868ac7
+CSeq: 1 OPTIONS
+Expires: 3600
+User-Agent: ESP32 SIP/2.0
+Content-Length: 0
+Allow: INVITE, ACK, CANCEL, BYE, UPDATE, REFER, MESSAGE, OPTIONS, INFO, SUBSCRIBE
+Supported: replaces, norefersub, extended-refer, timer, X-cisco-serviceuri
+Allow-Events: presence, kpml
+
+
+I (332549) SIP: [1970-01-01/00:05:15]=======================>>
+I (332699) SIP: [1970-01-01/00:05:16]<<=====READ 0471 bytes==
+I (332699) SIP:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 192.168.0.246:17936;branch=z9hG4bK-602019343;received=192.168.0.246;rport=17936
+From: <sip:100@192.168.0.196:5060>;tag=-30330557
+To: <sip:100@192.168.0.196>;tag=431e6c65
+Call-ID: ed850e8d5d744d8c900e8ec9f7868ac7
+CSeq: 1 OPTIONS
+Contact: <sip:100@192.168.0.196:5060>
+Date: Tue, 16 Nov 2021 07:19:55 GMT
+Allow: INVITE, ACK, CANCEL, OPTIONS, BYE, REFER, SUBSCRIBE, NOTIFY, INFO, PUBLISH
+Accept: application/sdp
+Content-Length: 0
+
+
+I (332739) SIP: [1970-01-01/00:05:16]<<======================
+I (365349) SIP: [1970-01-01/00:06:02]=======WRITE 0567 bytes>>
+I (365349) SIP:
+
+OPTIONS sip:100@192.168.0.196:5060 SIP/2.0
+Via: SIP/2.0/UDP 192.168.0.246:17936;branch=z9hG4bK-2125946975;rport
+From: <sip:100@192.168.0.196:5060>;tag=-8248665
+To: <sip:100@192.168.0.196:5060>
+Contact: <sip:100@192.168.0.246:17936>
+Max-Forwards: 30
+Call-ID: ed850e8d5d744d8c900e8ec9f7868ac7
+CSeq: 1 OPTIONS
+Expires: 3600
+User-Agent: ESP32 SIP/2.0
+Content-Length: 0
+Allow: INVITE, ACK, CANCEL, BYE, UPDATE, REFER, MESSAGE, OPTIONS, INFO, SUBSCRIBE
+Supported: replaces, norefersub, extended-refer, timer, X-cisco-serviceuri
+Allow-Events: presence, kpml
+
+
+I (365399) SIP: [1970-01-01/00:06:02]=======================>>
+I (365419) SIP: [1970-01-01/00:06:02]<<=====READ 0471 bytes==
+I (365419) SIP: 
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 192.168.0.246:17936;branch=z9hG4bK-2125946975;received=192.168.0.246;rport=17936
+From: <sip:100@192.168.0.196:5060>;tag=-8248665
+To: <sip:100@192.168.0.196>;tag=b5a8c93e
+Call-ID: ed850e8d5d744d8c900e8ec9f7868ac7
+CSeq: 1 OPTIONS
+Contact: <sip:100@192.168.0.196:5060>
+Date: Tue, 16 Nov 2021 07:20:27 GMT
+Allow: INVITE, ACK, CANCEL, OPTIONS, BYE, REFER, SUBSCRIBE, NOTIFY, INFO, PUBLISH
+Accept: application/sdp
+Content-Length: 0
+
+
+I (365459) SIP: [1970-01-01/00:06:02]<<======================
+I (398269) SIP: [1970-01-01/00:06:18]=======WRITE 0570 bytes>>
+I (398269) SIP:
+
+OPTIONS sip:100@192.168.0.196:5060 SIP/2.0
+Via: SIP/2.0/UDP 192.168.0.246:17936;branch=z9hG4bK--645395054;rport
+From: <sip:100@192.168.0.196:5060>;tag=-2044159689
+To: <sip:100@192.168.0.196:5060>
+Contact: <sip:100@192.168.0.246:17936>
+Max-Forwards: 30
+Call-ID: ed850e8d5d744d8c900e8ec9f7868ac7
+CSeq: 1 OPTIONS
+Expires: 3600
+User-Agent: ESP32 SIP/2.0
+Content-Length: 0
+Allow: INVITE, ACK, CANCEL, BYE, UPDATE, REFER, MESSAGE, OPTIONS, INFO, SUBSCRIBE
+Supported: replaces, norefersub, extended-refer, timer, X-cisco-serviceuri
+Allow-Events: presence, kpml
+
+
+I (398319) SIP: [1970-01-01/00:06:18]=======================>>
+I (398419) SIP: [1970-01-01/00:06:18]<<=====READ 0474 bytes==
+I (398419) SIP:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 192.168.0.246:17936;branch=z9hG4bK--645395054;received=192.168.0.246;rport=17936
+From: <sip:100@192.168.0.196:5060>;tag=-2044159689
+To: <sip:100@192.168.0.196>;tag=c65df5ed
+Call-ID: ed850e8d5d744d8c900e8ec9f7868ac7
+CSeq: 1 OPTIONS
+Contact: <sip:100@192.168.0.196:5060>
+Date: Tue, 16 Nov 2021 07:21:00 GMT
+Allow: INVITE, ACK, CANCEL, OPTIONS, BYE, REFER, SUBSCRIBE, NOTIFY, INFO, PUBLISH
+Accept: application/sdp
+Content-Length: 0
+
+
+I (398459) SIP: [1970-01-01/00:06:18]<<======================
+I (431069) SIP: [1970-01-01/00:07:05]=======WRITE 0569 bytes>>
+I (431069) SIP:
+
+OPTIONS sip:100@192.168.0.196:5060 SIP/2.0
+Via: SIP/2.0/UDP 192.168.0.246:17936;branch=z9hG4bK--140747620;rport
+From: <sip:100@192.168.0.196:5060>;tag=-539189467
+To: <sip:100@192.168.0.196:5060>
+Contact: <sip:100@192.168.0.246:17936>
+Max-Forwards: 30
+Call-ID: ed850e8d5d744d8c900e8ec9f7868ac7
+CSeq: 1 OPTIONS
+Expires: 3600
+User-Agent: ESP32 SIP/2.0
+Content-Length: 0
+Allow: INVITE, ACK, CANCEL, BYE, UPDATE, REFER, MESSAGE, OPTIONS, INFO, SUBSCRIBE
+Supported: replaces, norefersub, extended-refer, timer, X-cisco-serviceuri
+Allow-Events: presence, kpml
+
+
+I (431119) SIP: [1970-01-01/00:07:05]=======================>>
+I (431959) SIP: [1970-01-01/00:07:05]<<=====READ 0473 bytes==
+I (431959) SIP:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 192.168.0.246:17936;branch=z9hG4bK--140747620;received=192.168.0.246;rport=17936
+From: <sip:100@192.168.0.196:5060>;tag=-539189467
+To: <sip:100@192.168.0.196>;tag=86d5e9d6
+Call-ID: ed850e8d5d744d8c900e8ec9f7868ac7
+CSeq: 1 OPTIONS
+Contact: <sip:100@192.168.0.196:5060>
+Date: Tue, 16 Nov 2021 07:21:33 GMT
+Allow: INVITE, ACK, CANCEL, OPTIONS, BYE, REFER, SUBSCRIBE, NOTIFY, INFO, PUBLISH
+Accept: application/sdp
+Content-Length: 0
+
+
+I (431999) SIP: [1970-01-01/00:07:05]<<======================
+I (463909) SIP: [1970-01-01/00:07:21]=======WRITE 0569 bytes>>
+I (463909) SIP:
+
+OPTIONS sip:100@192.168.0.196:5060 SIP/2.0
+Via: SIP/2.0/UDP 192.168.0.246:17936;branch=z9hG4bK-1063248853;rport
+From: <sip:100@192.168.0.196:5060>;tag=-283458017
+To: <sip:100@192.168.0.196:5060>
+Contact: <sip:100@192.168.0.246:17936>
+Max-Forwards: 30
+Call-ID: ed850e8d5d744d8c900e8ec9f7868ac7
+CSeq: 1 OPTIONS
+Expires: 3600
+User-Agent: ESP32 SIP/2.0
+Content-Length: 0
+Allow: INVITE, ACK, CANCEL, BYE, UPDATE, REFER, MESSAGE, OPTIONS, INFO, SUBSCRIBE
+Supported: replaces, norefersub, extended-refer, timer, X-cisco-serviceuri
+Allow-Events: presence, kpml
+
+
+I (463959) SIP: [1970-01-01/00:07:21]=======================>>
+I (463989) SIP: [1970-01-01/00:07:21]<<=====READ 0473 bytes==
+I (463989) SIP:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 192.168.0.246:17936;branch=z9hG4bK-1063248853;received=192.168.0.246;rport=17936
+From: <sip:100@192.168.0.196:5060>;tag=-283458017
+To: <sip:100@192.168.0.196>;tag=127ce937
+Call-ID: ed850e8d5d744d8c900e8ec9f7868ac7
+CSeq: 1 OPTIONS
+Contact: <sip:100@192.168.0.196:5060>
+Date: Tue, 16 Nov 2021 07:22:06 GMT
+Allow: INVITE, ACK, CANCEL, OPTIONS, BYE, REFER, SUBSCRIBE, NOTIFY, INFO, PUBLISH
+Accept: application/sdp
+Content-Length: 0
+
+
+I (464029) SIP: [1970-01-01/00:07:21]<<======================
+Rx- 10 Rx- 0 Rx- c Rx- 1c Rx- 0 Rx- 1 Rx- 2d Rx- 44 Rx- 1d Rx- 4 Rx- 0 Rx- 2 Rx- 0 Rx- 1 Rx- 37 Rx- e9 CV 1c 0 1 2d 44 1d 4 0 2 0 1 37 1 2 0 0 26 
+ The key pressed is 7 and value of us16_PP_HS_State is 6
+10018282
+Rx- 10 Rx- 0 Rx- c Rx- 2c Rx- 0 Rx- 1 Rx- 2d Rx- 44 Rx- 1d Rx- 4 Rx- 0 Rx- 2 Rx- 0 Rx- 1 Rx- 38 Rx- fa CV 2c 0 1 2d 44 1d 4 0 2 0 1 38 1 2 0 0 26 
+ The key pressed is 8 and value of us16_PP_HS_State is 6
+10018383
+Rx- 10 Rx- 0 Rx- c Rx- 3c Rx- 0 Rx- 1 Rx- 2d Rx- 44 Rx- 1d Rx- 4 Rx- 0 Rx- 2 Rx- 0 Rx- 1 Rx- 37 Rx- 9 CV 3c 0 1 2d 44 1d 4 0 2 0 1 37 1 2 0 0 26 
+ The key pressed is 7 and value of us16_PP_HS_State is 6
+10018484
+Rx- 10 Rx- 0 Rx- c Rx- 4c Rx- 0 Rx- 1 Rx- 2d Rx- 44 Rx- 1d Rx- 4 Rx- 0 Rx- 2 Rx- 0 Rx- 1 Rx- 38 Rx- 1a CV 4c 0 1 2d 44 1d 4 0 2 0 1 38 1 2 0 0 26 
+ The key pressed is 8 and value of us16_PP_HS_State is 6
+10018585
+I (496739) SIP: [1970-01-01/00:08:08]=======WRITE 0570 bytes>>
+I (496739) SIP:
+
+OPTIONS sip:100@192.168.0.196:5060 SIP/2.0
+Via: SIP/2.0/UDP 192.168.0.246:17936;branch=z9hG4bK-1059325231;rport
+From: <sip:100@192.168.0.196:5060>;tag=-1918542086
+To: <sip:100@192.168.0.196:5060>
+Contact: <sip:100@192.168.0.246:17936>
+Max-Forwards: 30
+Call-ID: ed850e8d5d744d8c900e8ec9f7868ac7
+CSeq: 1 OPTIONS
+Expires: 3600
+User-Agent: ESP32 SIP/2.0
+Content-Length: 0
+Allow: INVITE, ACK, CANCEL, BYE, UPDATE, REFER, MESSAGE, OPTIONS, INFO, SUBSCRIBE
+Supported: replaces, norefersub, extended-refer, timer, X-cisco-serviceuri
+Allow-Events: presence, kpml
+
+
+I (496789) SIP: [1970-01-01/00:08:08]=======================>>
+I (496809) SIP: [1970-01-01/00:08:08]<<=====READ 0474 bytes==
+I (496809) SIP:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 192.168.0.246:17936;branch=z9hG4bK-1059325231;received=192.168.0.246;rport=17936
+From: <sip:100@192.168.0.196:5060>;tag=-1918542086
+To: <sip:100@192.168.0.196>;tag=aa179f76
+Call-ID: ed850e8d5d744d8c900e8ec9f7868ac7
+CSeq: 1 OPTIONS
+Contact: <sip:100@192.168.0.196:5060>
+Date: Tue, 16 Nov 2021 07:22:39 GMT
+Allow: INVITE, ACK, CANCEL, OPTIONS, BYE, REFER, SUBSCRIBE, NOTIFY, INFO, PUBLISH
+Accept: application/sdp
+Content-Length: 0
+
+
+I (496849) SIP: [1970-01-01/00:08:08]<<======================
+Rx- 10 Rx- 0 Rx- c Rx- 5c Rx- 0 Rx- 1 Rx- 2d Rx- 44 Rx- 1d Rx- 4 Rx- 0 Rx- 2 Rx- 0 Rx- 1 Rx- 37 Rx- 29 CV 5c 0 1 2d 44 1d 4 0 2 0 1 37 1 2 0 0 26 
+ The key pressed is 7 and value of us16_PP_HS_State is 6
+10018686
+Rx- 10 Rx- 0 Rx- c Rx- 6c Rx- 0 Rx- 1 Rx- 2d Rx- 44 Rx- 1d Rx- 4 Rx- 0 Rx- 2 Rx- 0 Rx- 1 Rx- 38 Rx- 3a CV 6c 0 1 2d 44 1d 4 0 2 0 1 38 1 2 0 0 26 
+ The key pressed is 8 and value of us16_PP_HS_State is 6
+10018787
+Rx- 10 Rx- 0 Rx- 9 Rx- 7c Rx- 0 Rx- 1 Rx- f Rx- 44 Rx- 1d Rx- 0 Rx- 0 Rx- 0 Rx- ed CV 7c 0 1 f 44 1d 0 0 0 0 1 38 1 2 0 0 26 I (520629) STATE CALL:  05
+CC RELEASE IND - CALL DECLINED
+I (520639) SIP RINGING: 32
+I (520639) SIP CALL: CALL RELEASE
+I (520639) SIP: User call sip BYE
+10018080
+I (520649) STATE CALL:  11
+I (520649) STANDBY :  00
+I (520649) STANDBY :  00
+I (520659) STATE CALL:  06
+I (520659) SIP: [1970-01-01/00:08:20]=======WRITE 0528 bytes>>
+I (520669) SIP: 
+
+BYE sip:200@192.168.0.196:5060 SIP/2.0
+Via: SIP/2.0/UDP 192.168.0.196:5060;branch=z9hG4bK-P170ca24aj752e2f8;rport
+Via: SIP/2.0/UDP 192.168.0.196:53479;received=192.168.0.196;rport=53479;branch=z9hG4bKPj177502cea22f48a8ace2d35dc7bd37e4
+From: <sip:100@192.168.0.196>;tag=-1243429288
+To: <sip:200@192.168.0.196>;tag=9e29079383e94e64b5237d8ddd2aa0e0
+Contact: <sip:100@192.168.0.246:17936>
+Max-Forwards: 70
+Call-ID: ed850e8d5d744d8c900e8ec9f7868ac7
+CSeq: 2 BYE
+Expires: 3600
+User-Agent: ESP32 SIP/2.0
+Content-Length: 0
+
+
+
+ The  value of us16_PP_HS_State is 7
+Rx- 10 I (520719) SIP: [1970-01-01/00:08:20]=======================>>
+Rx- 0 Rx- 1 Rx- 85 Rx- 85 1009480110441d000ba
+1009580111441000af
+Rx- 10 Rx- 0 Rx- 1 Rx- 86 Rx- 86 Rx- 10 Rx- 0 Rx- 9 Rx- e Rx- 0 Rx- 1 Rx- 12 Rx- 44 Rx- 1 Rx- 2 Rx- 0 Rx- 0 Rx- 68 CV e 0 1 12 44 1 2 0 0 0 1 38 1 2 0 0 26
+ The  value of us16_PP_HS_State is 7 
+10076801104200bb
+Rx- 10 Rx- 0 Rx- 1 Rx- 87 Rx- 87 Rx- 10 Rx- 0 Rx- 8 Rx- 1f Rx- 0 Rx- 1 Rx- 11 Rx- 42 Rx- 0 Rx- 0 Rx- 0 Rx- 73 CV 1f 0 1 11 42 0 0 0 0 0 1 38 1 2 0 0 26
+
+ The  value of us16_PP_HS_State is 7
+Rx- 10 Rx- 0 Rx- 1 Rx- 80 Rx- 80 Rx- 10 Rx- 0 Rx- 8 Rx- 28 Rx- 0 Rx- 1 Rx- 11 Rx- 42 10Rx- 0 0Rx- 0 77801104200cb
+Rx- 0 Rx- 7c CV 28 0 1 11 42 0 0 0 0 0 1 38 1 2 0 0 26
+ The  value of us16_PP_HS_State is 7
+100a8012592110068
+Rx- 10 Rx- 0 Rx- 1 Rx- 81 Rx- 81 Rx- 10 Rx- 0 Rx- 6 Rx- 39 Rx- 0 Rx- 1 Rx- 3 Rx- 59 Rx- 0 Rx- 96 CV 39 0 1 3 59 0 0 0 0 0 1 38 1 2 0 0 26 
+ The  value of us16_PP_HS_State is 7
+Rx- 10 Rx- 0 Rx- 1 Rx- 82 Rx- 82 Rx- 10 Rx- 0 Rx- 6 Rx- 4a 10Rx- 0 Rx- 1 0a18012592Rx- 3 Rx- 59 Rx- 0 Rx- a7 110078
+CV 4a 0 1 3 59 0 0 0 0 0 1 38 1 2 0 0 26
+ The  value of us16_PP_HS_State is 7
+10018181
+10018282
+10018383
+10018484
+10018585
+W (522729) SIP: Retransmit again
+I (522729) SIP: [1970-01-01/00:08:21]=======WRITE 0528 bytes>>
+I (522729) SIP:
+
+BYE sip:200@192.168.0.196:5060 SIP/2.0
+Via: SIP/2.0/UDP 192.168.0.196:5060;branch=z9hG4bK-P170ca24aj752e2f8;rport
+Via: SIP/2.0/UDP 192.168.0.196:53479;received=192.168.0.196;rport=53479;branch=z9hG4bKPj177502cea22f48a8ace2d35dc7bd37e4
+From: <sip:100@192.168.0.196>;tag=-1243429288
+To: <sip:200@192.168.0.196>;tag=9e29079383e94e64b5237d8ddd2aa0e0
+Contact: <sip:100@192.168.0.246:17936>
+Max-Forwards: 70
+Call-ID: ed850e8d5d744d8c900e8ec9f7868ac7
+CSeq: 2 BYE
+Expires: 3600
+User-Agent: ESP32 SIP/2.0
+Content-Length: 0
+
+
+I (522779) SIP: [1970-01-01/00:08:21]=======================>>
+I (522789) SIP: [1970-01-01/00:08:21]<<=====READ 0486 bytes==
+I (522789) SIP:
+
+SIP/2.0 404 No call context found
+Via: SIP/2.0/UDP 192.168.0.196:5060;branch=z9hG4bK-P170ca24aj752e2f8;received=192.168.0.246;rport=17936
+Via: SIP/2.0/UDP 192.168.0.196:53479;received=192.168.0.196;rport=53479;branch=z9hG4bKPj177502cea22f48a8ace2d35dc7bd37e4
+From: <sip:100@192.168.0.196>;tag=-1243429288
+To: <sip:200@192.168.0.196>;tag=9e29079383e94e64b5237d8ddd2aa0e0
+Call-ID: ed850e8d5d744d8c900e8ec9f7868ac7
+CSeq: 2 BYE
+Reason: 1
+Server: TekSIP/v4.1.4
+Content-Length: 0
+
+
+I (522829) SIP: [1970-01-01/00:08:21]<<======================
+W (522839) SIP: CHANGE STATE FROM 32, TO 2, :func: _sip_request_bye:1408
+W (522849) VOIP_EXAMPLE: SIP_EVENT_AUDIO_SESSION_END
+W (522849) AUDIO_ELEMENT: OUT-[sip_dec] AEL_IO_ABORT
+I (522869) SIP_RTP: send task stopped
+W (523119) AUDIO_PIPELINE: There are no listener registered
+I (523129) AUDIO_PIPELINE: audio_pipeline_unlinked
+W (523129) AUDIO_ELEMENT: [raw] Element has not create when AUDIO_ELEMENT_TERMINATE
+W (523129) AUDIO_ELEMENT: [sip_dec] Element has not create when AUDIO_ELEMENT_TERMINATE
+W (523139) AUDIO_ELEMENT: [filter] Element has not create when AUDIO_ELEMENT_TERMINATE
+W (523149) AUDIO_ELEMENT: [i2s] Element has not create when AUDIO_ELEMENT_TERMINATE
+W (523239) AUDIO_PIPELINE: There are no listener registered
+I (523239) AUDIO_PIPELINE: audio_pipeline_unlinked
+W (523239) AUDIO_ELEMENT: [i2s] Element has not create when AUDIO_ELEMENT_TERMINATE
+W (523249) AUDIO_ELEMENT: [filter] Element has not create when AUDIO_ELEMENT_TERMINATE
+W (523259) AUDIO_ELEMENT: [sip_enc] Element has not create when AUDIO_ELEMENT_TERMINATE
+W (523269) AUDIO_ELEMENT: [raw] Element has not create when AUDIO_ELEMENT_TERMINATE
+I (523279) SIP_RTP: receive task stopped
+I (523279) SIP_RTP: RTP stopped
+W (523289) VOIP_EXAMPLE: SIP_EVENT_HANGUP
+10092d0111441d000a0
+Rx- 10 Rx- 0 Rx- 1 Rx- 83 Rx- 83 Rx- 10 Rx- 0 Rx- 9 Rx- 5b Rx- 0 Rx- 1 Rx- 12 Rx- 44 Rx- 1d Rx- 2 Rx- 0 Rx- 0 Rx- d1 CV 5b 0 1 12 44 1d 2 0 0 0 1 38 1 2 0 0 26
+ The  value of us16_PP_HS_State is 7
+10018686
+I (532189) SIP: [1970-01-01/00:08:25]=======WRITE 0579 bytes>>
+I (532189) SIP:
+
+OPTIONS sip:100@192.168.0.196:5060 SIP/2.0
+Via: SIP/2.0/UDP 192.168.0.246:17936;branch=z9hG4bK-204380388;rport
+From: <sip:100@192.168.0.196:5060>;tag=687354434
+To: <sip:100@192.168.0.196:5060>
+Contact: <sip:100@192.168.0.246:17936>
+Max-Forwards: 70
+Call-ID: 9BECCF35592999744BDE4E486430AA92736E2671AD65
+CSeq: 3 OPTIONS
+Expires: 3600
+User-Agent: ESP32 SIP/2.0
+Content-Length: 0
+Allow: INVITE, ACK, CANCEL, BYE, UPDATE, REFER, MESSAGE, OPTIONS, INFO, SUBSCRIBE
+Supported: replaces, norefersub, extended-refer, timer, X-cisco-serviceuri
+Allow-Events: presence, kpml
+
+
+I (532239) SIP: [1970-01-01/00:08:25]=======================>>
+I (532259) SIP: [1970-01-01/00:08:25]<<=====READ 0483 bytes==
+I (532259) SIP:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 192.168.0.246:17936;branch=z9hG4bK-204380388;received=192.168.0.246;rport=17936
+From: <sip:100@192.168.0.196:5060>;tag=687354434
+To: <sip:100@192.168.0.196>;tag=2fbd7bd5
+Call-ID: 9BECCF35592999744BDE4E486430AA92736E2671AD65
+CSeq: 3 OPTIONS
+Contact: <sip:100@192.168.0.196:5060>
+Date: Tue, 16 Nov 2021 07:23:14 GMT
+Allow: INVITE, ACK, CANCEL, OPTIONS, BYE, REFER, SUBSCRIBE, NOTIFY, INFO, PUBLISH
+Accept: application/sdp
+Content-Length: 0
+
+
+I (532299) SIP: [1970-01-01/00:08:25]<<======================

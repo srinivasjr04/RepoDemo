@@ -1,0 +1,5 @@
+The manufacturers of FP and PP will define their product compatibility with help of ARI class and additional parameters, when the installer installing the system the mutually compatible FP and PP should be installed, so that those both systems can locate/identify with each other on power on as per DECT protocol, on powerup FP locates there are N number of PPs in the range, then with the help of APIs we can query the count and the registration process (the way in application implemented) can be done... ...
+
+
+
+we can say something like identifying/Scanning the wifi network and getting connected.....The registration what we are doing in our application is equal to getting connected to a wifi network........to identify the wifi network as there are some standards ....FP and PP to identify each other these are the standards (the documents what we are referring ) .... so after identification only our Application can communicate with Handsets......hence I think to identify they must be pre-configured at factory level.... ​

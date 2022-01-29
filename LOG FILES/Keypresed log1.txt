@@ -1,0 +1,716 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\Users\jsrin\projects\DECT_FP> C:\Users\jsrin\.espressif\python_env\idf4.2_py3.8_env\Scripts\python.exe C:\Users\jsrin\esp\esp-idf\tools\idf.py -p COM4 monitor
+Executing action: monitor
+Running idf_monitor in directory c:\users\jsrin\projects\dect_fp
+Executing "C:\Users\jsrin\.espressif\python_env\idf4.2_py3.8_env\Scripts\python.exe C:\Users\jsrin\esp\esp-idf\tools/idf_monitor.py -p COM4 -b 115200 --toolchain-prefix xtensa-esp32-elf- c:\users\jsrin\projects\dect_fp\build\DECT_FP.elf -m 'C:\Users\jsrin\.espressif\python_env\idf4.2_py3.8_env\Scripts\python.exe' 'C:\Users\jsrin\esp\esp-idf\tools\idf.py' '-p' 'COM4'"...
+--- WARNING: GDB cannot open serial ports accessed as COMx
+--- Using \\.\COM4 instead...
+--- idf_monitor on \\.\COM4 115200 ---
+--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---
+I (12) boot: ESP-IDF v4.2.2-dirty 2nd stage bootloader
+I (12) boot: compile time 12:24:34
+I (13) boot: chip revision: 1
+I (15) boot_comm: chip revision: 1, min. bootloader chip revision: 0
+I (22) boot.esp32: SPI Speed      : 40MHz
+I (26) boot.esp32: SPI Mode       : DIO
+I (31) boot.esp32: SPI Flash Size : 8MB
+I (35) boot: Enabling RNG early entropy source...
+I (41) boot: Partition Table:
+I (44) boot: ## Label            Usage          Type ST Offset   Length
+I (52) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+I (59) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+I (67) boot:  2 factory          factory app      00 00 00010000 00100000
+I (74) boot: End of partition table
+I (78) boot_comm: chip revision: 1, min. application chip revision: 0
+I (85) esp_image: segment 0: paddr=0x00010020 vaddr=0x3f400020 size=0x26af8 (158456) map
+I (155) esp_image: segment 1: paddr=0x00036b20 vaddr=0x3ffb0000 size=0x033ac ( 13228) load
+I (160) esp_image: segment 2: paddr=0x00039ed4 vaddr=0x40080000 size=0x06144 ( 24900) load
+0x40080000: _WindowOverflow4 at C:/Users/jsrin/esp/esp-idf/components/freertos/xtensa/xtensa_vectors.S:1730
+
+I (172) esp_image: segment 3: paddr=0x00040020 vaddr=0x400d0020 size=0xb0c9c (724124) map
+0x400d0020: _stext at ??:?
+
+I (448) esp_image: segment 4: paddr=0x000f0cc4 vaddr=0x40086144 size=0x10eb0 ( 69296) load
+0x40086144: disable_wifi_agc at /home/cff/gittree/chip7.1_phy/chip_7.1/board_code/app_test/pp/phy/phy_chip_v7.c:101
+
+I (491) boot: Loaded app from partition at offset 0x10000
+I (491) boot: Disabling RNG early entropy source...
+I (492) cpu_start: Pro cpu up.
+I (495) cpu_start: Application information:
+I (500) cpu_start: Project name:     DECT_FP
+I (505) cpu_start: App version:      1
+I (510) cpu_start: Compile time:     Nov 16 2021 12:24:01
+I (516) cpu_start: ELF file SHA256:  4583eb1bde374404...
+I (522) cpu_start: ESP-IDF:          v4.2.2-dirty
+I (527) cpu_start: Starting app cpu, entry point is 0x400819cc
+0x400819cc: call_start_cpu1 at C:/Users/jsrin/esp/esp-idf/components/esp32/cpu_start.c:287
+
+I (0) cpu_start: App cpu up.
+I (538) heap_init: Initializing. RAM available for dynamic allocation:
+I (544) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM
+I (550) heap_init: At 3FFB7EE0 len 00028120 (160 KiB): DRAM
+I (557) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM
+I (563) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM
+I (570) heap_init: At 40096FF4 len 0000900C (36 KiB): IRAM
+I (576) cpu_start: Pro cpu start user code
+I (594) spi_flash: detected chip: gd
+I (595) spi_flash: flash io: dio
+I (595) cpu_start: Starting scheduler on PRO CPU.
+I (0) cpu_start: Starting scheduler on APP CPU.
+I (678) VOIP_EXAMPLE: [1.0] Initialize peripherals management
+I (678) VOIP_EXAMPLE: [1.1] Initialize and start peripherals
+I (678) VOIP_EXAMPLE: [1.2] Start and wait for Wi-Fi network
+I (708) wifi:wifi driver task: 3ffc2768, prio:23, stack:6656, core=0
+I (708) system_api: Base MAC address is not set
+I (708) system_api: read default base MAC address from EFUSE
+I (728) wifi:wifi firmware version: bb6888c
+I (728) wifi:wifi certification version: v7.0
+I (728) wifi:config NVS flash: enabled
+I (728) wifi:config nano formating: disabled
+I (738) wifi:Init data frame dynamic rx buffer num: 32
+I (738) wifi:Init management frame dynamic rx buffer num: 32
+I (748) wifi:Init management short buffer num: 32
+I (748) wifi:Init dynamic tx buffer num: 32
+I (758) wifi:Init static rx buffer size: 1600
+I (758) wifi:Init static rx buffer num: 10
+I (758) wifi:Init dynamic rx buffer num: 32
+I (768) wifi_init: rx ba win: 6
+I (768) wifi_init: tcpip mbox: 32
+I (778) wifi_init: udp mbox: 6
+I (778) wifi_init: tcp mbox: 6
+I (778) wifi_init: tcp tx win: 5744
+I (788) wifi_init: tcp rx win: 5744
+I (788) wifi_init: tcp mss: 1440
+I (798) wifi_init: WiFi IRAM OP enabled
+I (798) wifi_init: WiFi RX IRAM OP enabled
+I (808) phy_init: phy_version 4660,0162888,Dec 23 2020
+I (908) wifi:mode : sta (ac:67:b2:4d:18:c4)
+I (2138) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1
+I (2908) wifi:state: init -> auth (b0)
+I (2938) wifi:state: auth -> assoc (0)
+I (2948) wifi:state: assoc -> run (10)
+I (2978) wifi:connected with Pranav, aid = 7, channel 11, BW20, bssid = d8:07:b6:89:e0:d3
+I (2978) wifi:security: WPA2-PSK, phy: bgn, rssi: -58
+I (2978) wifi:pm start, type: 1
+
+W (2988) PERIPH_WIFI: WiFi Event cb, Unhandle event_base:WIFI_EVENT, event_id:4
+I (3048) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (3678) esp_netif_handlers: sta ip: 192.168.0.246, mask: 255.255.255.0, gw: 192.168.0.1
+I (3678) PERIPH_WIFI: Got ip:192.168.0.246
+I (3678) VOIP_EXAMPLE: [ 2 ] Start codec chip
+I (3688) DRV8311: ES8311 in Slave mode
+I (3708) gpio: GPIO[21]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+W (3708) I2C_BUS: i2c_bus_create:57: I2C bus has been already created, [port:0]
+I (3718) AUDIO_HAL: Codec mode is 3, Ctrl:1
+I (3728) VOIP_EXAMPLE: [ 3 ] Create and start input key service
+I (3728) VOIP_EXAMPLE: [ 4 ] Create SIP Service
+I (3728) INIT: APP COLA
+I (3728) app_main: APP STARED
+I (3738) tsk: TASKCREATing
+
+ PRINTF TEST
+I (3738) BusMail: Busmail Task Started
+I (3748) INIT STATE:  00
+I (3748) CMD: SET FEATURES
+I (3748) INIT STATE: STARTED
+I (3758) INIT STATE:  01
+1001c8c8
+I (3758) SIP: esp_sip ver : '1.0.1' Compile date: Sep 16 2021-14:17:23
+Rx- 10 Rx- 0 Rx- 1 Rx- c0 Rx- c0 I (3768) SIP: Conecting...
+W (3778) SIP: CHANGE STATE FROM 0, TO 1, :func: sip_connect:1667
+I (3778) SIP: [1970-01-01/00:00:01]=======WRITE 0584 bytes>>
+I (3788) SIP:
+
+REGISTER sip:100@192.168.0.196:5060 SIP/2.0
+Via: SIP/2.0/UDP 192.168.0.246:17003;branch=z9hG4bK-1260328725;rport
+From: <sip:100@192.168.0.196:5060>;tag=-1997787894
+To: <sip:100@192.168.0.196:5060>
+Contact: <sip:100@192.168.0.246:17003>
+Max-Forwards: 70
+Call-ID: 07629A8D3CBE9C94034B179B6B6BF25B7A3FF89F98AD
+CSeq: 1 REGISTER
+Expires: 3600
+User-Agent: ESP32 SIP/2.0
+Content-Length: 0
+Allow: INVITE, ACK, CANCEL, BYE, UPDATE, REFER, MESSAGE, OPTIONS, INFO, SUBSCRIBE
+Supported: replaces, norefersub, extended-refer, timer, X-cisco-serviceuri
+Allow-Events: presence, kpml
+
+
+I (3838) SIP: [1970-01-01/00:00:01]=======================>>
+1006801a0401ea
+Rx- 10 Rx- 0 Rx- 1 Rx- 81 Rx- 81 Rx- 10 Rx- 0 Rx- 7 Rx- 9 Rx- 0 Rx- 1 Rx- a1 Rx- 40 Rx- 0 Rx- 1 Rx- ec CV 9 0 1 a1 40 0 1 0 0 0 0 0 0 0 0 0 1e I (3858) INIT SUB STATE1: ENTERED
+10I (3868) INIT STATE:  02
+07180114420372
+I (3868) INIT STATE:  06
+Rx- 10 Rx- 0 Rx- 1 Rx- 82 Rx- 82 Rx- 10 Rx- 0 Rx- 8 Rx- 1a Rx- 0 Rx- 1 Rx- 15 Rx- 42 Rx- 0 Rx- 0 Rx- 3 Rx- 75 10018181
+CV 1a 0 1 15 42 0 0 3 0 0 0 0 0 0 0 0 1e I (3878) INIT SUB STATE1: ENTERED
+I (3888) INIT STATE:  02
+I (3898) INIT STATE:  04
+I (3898) SIP: [1970-01-01/00:00:01]<<=====READ 0330 bytes==
+10I (3898) SIP:
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/UDP 192.168.0.246:17003;branch=z9hG4bK-1260328725;received=192.168.0.246;rport=17003
+From: <sip:100@192.168.0.196:5060>;tag=-1997787894
+To: <sip:100@192.168.0.196>;tag=4db847f3
+Call-ID: 07629A8D3CBE9C94034B179B6B6BF25B7A3FF89F98AD
+CSeq: 1 REGISTER
+Server: TekSIP/v4.1.4
+Content-Length: 0
+
+
+07290114421384I (3938) SIP: [1970-01-01/00:00:01]<<======================
+
+I (3948) INIT STATE:  05
+Rx- 10 I (3948) SIP: [1970-01-01/00:00:01]<<=====READ 0561 bytes==
+Rx- 0 Rx- 1 I (3948) SIP:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 192.168.0.246:17003;branch=z9hG4bK-1260328725;received=192.168.0.246;rport=17003
+From: <sip:100@192.168.0.196:5060>;tag=-1997787894
+To: <sip:100@192.168.0.196>;tag=4db847f3
+Contact: <sip:100@192.168.0.246:17003>;expires=3600
+Max-Forwards: 70
+Call-ID: 07629A8D3CBE9C94034B179B6B6BF25B7A3FF89F98AD
+CSeq: 1 REGISTER
+Server: TekSIP/v4.1.4
+Allow: INVITE, BYE, CANCEL, OPTIONS, ACK, REGISTER, SUBSCRIBE, PUBLISH
+Date: Tue, 16 Nov 2021 07:02:08 GMT
+Allow-Events: presence, presence.winfo
+Expires: 3600
+Content-Length: 0
+
+
+Rx- 83 Rx- 83 10018282
+I (4008) SIP: [1970-01-01/00:00:01]<<======================
+Rx- 10 Rx- 0 Rx- 8 Rx- 2b Rx- 0 Rx- 1 Rx- 15 Rx- 42 Rx- 0 Rx- 1 Rx- 3 Rx- 87 CV 2b 0 1 15 42 0 1 3 0 0 0 0 0 0 0 0 1e I (4018) INIT STATE:  07
+I (4018) SIP: Expires = 3600
+Rx- 10 Rx- 0 Rx- 8 Rx- 2b Rx- 0 Rx- 1 Rx- 15 Rx- 42 Rx- 0 Rx- 1 Rx- 3 Rx- 87 WRONG SEQ10073a01041107dI (4028) VOIP_EXAMPLE: SIP_EVENT_REGISTERED
+
+W (4048) SIP: CHANGE STATE FROM 1, TO 2, :func: sip_register:1695
+Rx- 10 Rx- 0 Rx- 1 Rx- 84 Rx- 84 Rx- 10 Rx- 0 Rx- c Rx- 3c Rx- 0 Rx- 1 Rx- 1 Rx- 41 Rx- 0 Rx- 6 Rx- 0 Rx- 1 Rx- 0 Rx- 1 Rx- 0 Rx- 87 10054a0164091
+CV 3c 0 1 1 41 0 6 0 1 0 1 0 0 0 0 0 1e I (4068) INIT STATE:  07
+I (4068) INIT STATE:  18
+I (4078) INIT STATE: API_FP_MM_GET_REGISTRATION_COUNT_CFM
+10I (4078) TERMINAL ID COUNT: 1
+055a014409f
+I (4088) HANDSET: GET IPUI
+I (4088) REGISTERED HS ID: 1
+Rx- 10 Rx- 0 Rx- 1 Rx- 85 Rx- 85 Rx- 10 Rx- 0 Rx- 9 Rx- 4d Rx- 0 10Rx- 1 056a01a40b5
+Rx- 7 Rx- 40 Rx- 0 Rx- 0 Rx- 0 Rx- 0 Rx- 95 CV 4d 0 1 7 40 0 0 0 0 0 1 0 0 0 0 0 1e I (4098) INIT STATE:  07
+10I (4108) INIT STATE:  09
+057a01146c2
+I (4118) INIT STATE:  10
+Rx- 10 Rx- 0 Rx- 1 Rx- 86 Rx- 86 Rx- 10 Rx- 0 Rx- b Rx- 5e Rx- 0 Rx- 1 Rx- 5 Rx- 40 Rx- 0 Rx- 2 Rx- eb Rx- 7f Rx- 9f Rx- e0 Rx- 8f 1007a0114422366
+CV 5e 0 1 5 40 0 2 eb 7f 9f e0 0 0 0 0 0 1e I (4128) INIT STATE:  07
+10I (4138) INIT STATE:  11
+018383
+I (4148) INIT STATE:  12
+Rx- 10 Rx- 0 Rx- 1 Rx- 87 Rx- 87 Rx- 10 Rx- 0 Rx- a Rx- 6f Rx- 0 Rx- 1 Rx- b Rx- 40 Rx- 0 Rx- ff Rx- ff Rx- 0 Rx- 0 Rx- b9 CV 6f 0 1 b 40 0 ff ff 0 0 e0 0 0 0 0 0 1e I (4158) INIT STATE:  07
+10I (4168) INIT STATE:  13
+018383
+I (4168) INIT STATE: API_FP_MM_GET_ACCESS_CODE_CFM
+I (4178) INIT STATE:  14
+10Rx- 10 071b0114423378
+Rx- 0 Rx- 1 Rx- 80 Rx- 80 Rx- 10 Rx- 0 Rx- 1 Rx- 81 Rx- 81 Rx- 10 Rx- 0 Rx- 8 Rx- 79 Rx- 0 Rx- 1 Rx- 15 Rx- 42 Rx- 0 Rx- 2 Rx- 3 10Rx- d6 018484
+CV 79 0 1 15 42 0 2 3 0 0 e0 0 0 0 0 0 1e I (4188) INIT STATE:  07
+10Rx- 10 072c010556088
+Rx- 0 Rx- 1 Rx- 82 Rx- 82 Rx- 10 Rx- 0 Rx- 8 Rx- a Rx- 0 Rx- 1 Rx- 15 Rx- 42 Rx- 0 Rx- 3 Rx- 3 Rx- 68 CV a 0 1 15 42 0 3 3 0 0 e0 0 0 0 0 0 1e 10I (4208) INIT STATE:  07
+018585
+Rx- 10 Rx- 0 Rx- 1 Rx- 83 Rx- 83 Rx- 10 Rx- 0 Rx- 16 Rx- 1b Rx- 0 Rx- 1 Rx- 1 Rx- 55 Rx- 6 Rx- 3 Rx- 0 Rx- 0 Rx- 0 Rx- 0 Rx- 0 Rx- 0 10Rx- ff 073d019411089
+Rx- 6 Rx- 0 Rx- 1 Rx- 10 Rx- 3 Rx- 2 Rx- 7 Rx- 10 Rx- ad CV 1b 0 1 1 55 6 3 0 0 0 0 0 0 ff 6 0 1e I (4228) INIT STATE:  07
+10I (4238) INIT STATE:  16
+018686
+I (4248) INIT STATE:  17
+Rx- 10 Rx- 0 Rx- 1 Rx- 84 Rx- 84 Rx- 10 Rx- 0 Rx- 26 Rx- 2c Rx- 0 Rx- 1 Rx- a Rx- 41 Rx- 0 Rx- 1 Rx- 0 Rx- 3 Rx- 31 Rx- d4 Rx- 26 10Rx- fd 018787
+Rx- 17 Rx- 0 Rx- 18 Rx- 0 Rx- 3 Rx- 9 Rx- 0 Rx- 1 Rx- 1 Rx- 0 Rx- a Rx- 1 Rx- 2 Rx- 3 Rx- 0 10Rx- 0 018080
+Rx- 1 Rx- 2 Rx- 0 Rx- 0 Rx- 4 Rx- 1b Rx- 0 Rx- 1 Rx- 2 Rx- 16 CV 2c 0 1 a 41 0 1 0 3 31 d4 26 fd 17 0 18 1e I (4268) INIT STATE:  07
+10I (4288) INIT STATE:  19
+018181
+I (4288) INIT STATE:  20
+10018282
+10074a0125530a5
+Rx- 10 Rx- 0 Rx- 1 Rx- 85 Rx- 85 Rx- 10 Rx- 0 Rx- 7 Rx- 3d Rx- 0 Rx- 1 Rx- 3 Rx- 55 Rx- 3 Rx- 0 Rx- 99 CV 3d 0 1 3 55 3 0 0 3 31 d4 26 fd 17 0 18 1e I (4308) INIT STATE:  07
+I (4318) INIT STATE:  21
+10018383
+I (4318) INIT STATE:  22
+I (4318) INIT STATE:  23
+10018484
+10055c01d41ab
+Rx- 10 Rx- 0 Rx- 1 Rx- 86 Rx- 86 100126c010421010010010000b3
+Rx- 10 Rx- 0 Rx- 1 Rx- 87 Rx- 87 Rx- 10 Rx- 0 Rx- 6 Rx- 4f Rx- 0 Rx- 1 Rx- 1 Rx- 42 Rx- 0 Rx- 93 CV 4f 0 1 1 42 0 0 0 3 31 d4 26 fd 17 0 18 1e I (4348) INIT STATE:  24
+I (4358) INIT STATE:  27
+10I (4358) INIT STATE:  28
+018585
+I (4358) INIT STATE:  24
+I (4368) STANDBY :  00
+I (4368) INIT STATE:  29
+100a7d0125921100dd
+Rx- 10 Rx- 0 Rx- 1 Rx- 80 Rx- 80 Rx- 10 Rx- 0 Rx- 6 Rx- 58 Rx- 0 Rx- 1 Rx- 3 Rx- 59 Rx- 0 Rx- b5 CV 58 0 1 3 59 0 0 0 3 31 d4 26 fd 17 0 18 1e 10018686
+I (26898) SIP: [1970-01-01/00:00:13]<<=====READ 1108 bytes==
+I (26898) SIP:
+
+INVITE sip:100@192.168.0.246:17003 SIP/2.0
+Via: SIP/2.0/UDP 192.168.0.196:5060;branch=z9hG4bK-P1b35ac45jf379a59;rport
+Via: SIP/2.0/UDP 192.168.0.196:65006;received=192.168.0.196;rport=65006;branch=z9hG4bKPj1fb33759aac5495c82a28795b180152a
+Max-Forwards: 70
+From: <sip:200@192.168.0.196>;tag=bdd31d700fc54132afd56a9f2406b5c2
+To: <sip:100@192.168.0.196>
+Contact: <sip:200@192.168.0.196:65006;ob>
+Call-ID: 8fe43e2d51d64850aab06ed27308da9e
+CSeq: 13715 INVITE
+Session-Expires: 1800
+Min-SE: 90
+Allow: PRACK, INVITE, ACK, BYE, CANCEL, UPDATE, INFO, SUBSCRIBE, NOTIFY, REFER, MESSAGE, OPTIONS
+Supported: replaces, 100rel, timer, norefersub
+Record-Route: <sip:192.168.0.196;lr>
+User-Agent: MicroSIP/3.20.5
+Content-Type: application/sdp
+Content-Length: 343
+
+v=0
+o=- 3846054751 3846054751 IN IP4 192.168.0.196
+s=pjmedia
+b=AS:84
+t=0 0
+a=X-nat:0
+m=audio 4002 RTP/AVP 8 0 101
+c=IN IP4 192.168.0.196
+b=TIAS:64000
+a=rtcp:4003 IN IP4 192.168.0.196
+a=sendrecv
+a=rtpmap:8 PCMA/8000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-16
+a=ssrc:1070800098 cname:50a45d8601b138ae
+
+I (26998) SIP: [1970-01-01/00:00:13]<<======================
+I (27008) SIP: Remote RTP port=4002
+I (27008) SIP: Remote RTP addr=192.168.0.196
+I (27018) SIP: call from 200
+I (27018) SIP: [1970-01-01/00:00:13]=======WRITE 0570 bytes>>
+I (27028) SIP:
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/UDP 192.168.0.196:5060;branch=z9hG4bK-P1b35ac45jf379a59;rport
+Via: SIP/2.0/UDP 192.168.0.196:65006;received=192.168.0.196;rport=65006;branch=z9hG4bKPj1fb33759aac5495c82a28795b180152a
+Record-Route: <sip:192.168.0.196;lr>
+Contact: <sip:100@192.168.0.246:17003>
+From: <sip:200@192.168.0.196>;tag=bdd31d700fc54132afd56a9f2406b5c2
+To: <sip:100@192.168.0.196>;tag=441714061
+Call-ID: 8fe43e2d51d64850aab06ed27308da9e
+CSeq: 13715 INVITE
+Server: ESP32 SIP/2.0
+Allow: ACK, INVITE, BYE, UPDATE, CANCEL, OPTIONS, INFO
+Content-Length: 0
+
+
+I (27078) SIP: [1970-01-01/00:00:13]=======================>>
+I (27088) SIP: [1970-01-01/00:00:13]=======WRITE 0573 bytes>>
+I (27088) SIP:
+
+SIP/2.0 180 Ringing
+Via: SIP/2.0/UDP 192.168.0.196:5060;branch=z9hG4bK-P1b35ac45jf379a59;rport
+Via: SIP/2.0/UDP 192.168.0.196:65006;received=192.168.0.196;rport=65006;branch=z9hG4bKPj1fb33759aac5495c82a28795b180152a
+Record-Route: <sip:192.168.0.196;lr>
+Contact: <sip:100@192.168.0.246:17003>
+From: <sip:200@192.168.0.196>;tag=bdd31d700fc54132afd56a9f2406b5c2
+To: <sip:100@192.168.0.196>;tag=-1868774951
+Call-ID: 8fe43e2d51d64850aab06ed27308da9e
+CSeq: 13715 INVITE
+Server: ESP32 SIP/2.0
+Allow: ACK, INVITE, BYE, UPDATE, CANCEL, OPTIONS, INFO
+Content-Length: 0
+
+
+I (27148) SIP: [1970-01-01/00:00:13]=======================>>
+W (27158) SIP: CHANGE STATE FROM 2, TO 16, :func: _sip_uas_process_req_invite:817
+I (28258) VOIP_EXAMPLE: ringing... RemotePhoneNum 200
+I (28258) STANDBY :  01
+I (28258) STANDBY :  07
+INCOMING CALL INITIATED
+DESTINATION ID = 1
+I (28258) SIZE: 4
+I (28258) INCOMING: FPCCSETU REQ
+I (28268) STANDBY :  26
+I (28268) STATE CALL:  00
+I (28268) STATE CALL:  01
+10016e0124410100000084050100211c7
+Rx- 10 Rx- 0 Rx- 1 Rx- 81 Rx- 81 100101e012592Rx- 10 Rx- 0 3Rx- e 1Rx- 69 e830e832ffff56
+Rx- 0 Rx- 1 Rx- 3 Rx- 44 Rx- 1d Rx- 3 Rx- 0 Rx- 0 Rx- 8 Rx- 0 Rx- 0 Rx- 0 Rx- 0 Rx- d9 CV 69 0 1 3 44 1d 3 0 0 8 0 0 0 0 0 18 1e 100187I (28298) STATE CALL:  03
+87
+HANDSET ID = 1
+ CCSETUP CFM -PRESENT 
+I (28308) STATE CALL:  04
+Rx- 10 Rx- 0 Rx- 1 Rx- 82 Rx- 82 Rx- 10 Rx- 0 Rx- 6 Rx- 7a Rx- 0 Rx- 1 Rx- 3 Rx- 59 Rx- 0 Rx- d7 CV 7a 0 1 3 59 0 3 0 0 8 0 0 0 0 0 18 1e 100102f01259231e830e832ffff67
+Rx- 10 Rx- 0 Rx- 1 Rx- 83 Rx- 83 Rx- 10 Rx- 0 Rx- 6 Rx- b Rx- 0 Rx- 1 Rx- 3 Rx- 59 Rx- 0 Rx- 68 CV b 0 1 3 59 0 3 0 0 8 0 0 0 0 0 18 1e 10018080       
+10018181
+Rx- 10 Rx- 0 Rx- 8 Rx- 1b Rx- 0 Rx- 1 Rx- 4 Rx- 44 Rx- 1d Rx- 0 Rx- 0 Rx- 81 CV 1b 0 1 4 44 1d 0 0 0 8 0 0 0 0 0 18 1e I (28828) STATE CALL:  03
+I (28828) CC ALERT IND: 1
+I (28828) INCOMING: CALL RECEIVED
+CC ALERT IND -CALL RECEIVED
+10CALLING PART NUMBER SENT018282
+I (28838) STATE CALL:  04
+1001c3a012e441dff3f12050f3901a5443532049434f4d3031d8
+Rx- 10 Rx- 0 Rx- 1 Rx- 84 Rx- 84 100f4a012e441dff3f50d02032f
+Rx- 10 Rx- 0 Rx- 1 Rx- 85 Rx- 85 100105a01259231e830e832ffff92
+Rx- 10 Rx- 0 Rx- 1 Rx- 86 Rx- 86 Rx- 10 Rx- 0 Rx- 6 Rx- 2e Rx- 0 Rx- 1 Rx- 3 Rx- 59 Rx- 0 Rx- 8b CV 2e 0 1 3 59 0 0 0 0 8 0 0 0 0 0 18 1e 10018383
+I (29278) VOIP_EXAMPLE: ringing... RemotePhoneNum 200
+I (30278) VOIP_EXAMPLE: ringing... RemotePhoneNum 200
+I (31378) VOIP_EXAMPLE: ringing... RemotePhoneNum 200
+I (32378) VOIP_EXAMPLE: ringing... RemotePhoneNum 200
+I (33378) VOIP_EXAMPLE: ringing... RemotePhoneNum 200
+I (34378) VOIP_EXAMPLE: ringing... RemotePhoneNum 200
+I (35378) VOIP_EXAMPLE: ringing... RemotePhoneNum 200
+I (36378) VOIP_EXAMPLE: ringing... RemotePhoneNum 200
+I (37378) VOIP_EXAMPLE: ringing... RemotePhoneNum 200
+I (38378) VOIP_EXAMPLE: ringing... RemotePhoneNum 200
+I (39378) VOIP_EXAMPLE: ringing... RemotePhoneNum 200
+Rx- 10 Rx- 0 Rx- 11 Rx- 3e Rx- 0 Rx- 1 Rx- 7 Rx- 44 Rx- 1d Rx- 9 Rx- 0 Rx- 1 Rx- 0 Rx- 6 Rx- 1 Rx- 1 Rx- 2 Rx- 0 Rx- 0 Rx- 4 Rx- bf CV 3e 0 1 7 44 1d 9 0 1 0 6 1 1 2 0 0 1e I (40088) STATE CALL:  03
+CC CONNECT IND -USER ACCEPTED
+Line ID = 0PCM FORMAT = 1I (40098) CC CONNECT RES: CMD SENDING
+I (40098) STATE CALL:  04
+10018484
+10076c01104201c0
+Rx- 10 Rx- 0 Rx- 1 Rx- 87 Rx- 87 Rx- 10 Rx- 0 Rx- 8 Rx- 4f Rx- 0 Rx- 1 Rx- 11 Rx- 42 Rx- 0 Rx- 0 Rx- 1 Rx- a4 CV 4f 0 1 11 42 0 0 1 1 0 6 1 1 2 0 0 1e 10097c018441d000e6
+Rx- 10 Rx- 0 Rx- 1 Rx- 80 Rx- 80 10014c012e441dff3fa0d0203100215e
+Rx- 10 Rx- 0 Rx- 1 Rx- 81 Rx- 81 100101c01259231e830e832ffff54
+Rx- 10 Rx- 0 Rx- 1 Rx- 82 Rx- 82 Rx- 10 Rx- 0 Rx- 6 Rx- 5a Rx- 0 Rx- 1 Rx- 3 Rx- 59 Rx- 0 Rx- b7 CV 5a 0 1 3 59 0 0 1 1 0 6 1 1 2 0 0 1e 10018585      
+10018686
+I (40178) SIP: [1970-01-01/00:00:19]=======WRITE 0758 bytes>>
+I (40178) SIP:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 192.168.0.196:5060;branch=z9hG4bK-P1b35ac45jf379a59;rport
+Via: SIP/2.0/UDP 192.168.0.196:65006;received=192.168.0.196;rport=65006;branch=z9hG4bKPj1fb33759aac5495c82a28795b180152a
+Record-Route: <sip:192.168.0.196;lr>
+Contact: <sip:100@192.168.0.246:17003>
+From: <sip:200@192.168.0.196>;tag=bdd31d700fc54132afd56a9f2406b5c2
+To: <sip:100@192.168.0.196>;tag=434973450
+Call-ID: 8fe43e2d51d64850aab06ed27308da9e
+CSeq: 13715 INVITE
+Server: ESP32 SIP/2.0
+Allow: ACK, INVITE, BYE, UPDATE, CANCEL, OPTIONS, INFO
+Content-Length: 159
+Content-Type: application/sdp
+
+v=0
+o=Z 0 3 IN IP4 192.168.0.246
+s=Z
+c=IN IP4 192.168.0.246
+t=0 0
+m=audio 32794 RTP/AVP 8 101
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+
+
+I (40238) SIP: [1970-01-01/00:00:19]=======================>>
+I (40458) VOIP_EXAMPLE: ringing... RemotePhoneNum 200
+I (40518) SIP: [1970-01-01/00:00:19]<<=====READ 0449 bytes==
+I (40518) SIP:
+
+ACK sip:100@192.168.0.246:17003 SIP/2.0
+Via: SIP/2.0/UDP 192.168.0.196:5060;branch=z9hG4bK-P73d8384fjaae9b20;rport
+Via: SIP/2.0/UDP 192.168.0.196:65006;received=192.168.0.196;rport=65006;branch=z9hG4bKPj7a3ade893b8240fdbdd148ed1306b337
+Max-Forwards: 70
+From: <sip:200@192.168.0.196>;tag=bdd31d700fc54132afd56a9f2406b5c2
+To: <sip:100@192.168.0.196>;tag=434973450
+Call-ID: 8fe43e2d51d64850aab06ed27308da9e
+CSeq: 13715 ACK
+Content-Length: 0
+
+
+I (40558) SIP: [1970-01-01/00:00:19]<<======================
+W (40568) SIP: CHANGE STATE FROM 16, TO 32, :func: sip_uas_process_req:886
+I (40568) VOIP_EXAMPLE: SIP_EVENT_AUDIO_SESSION_BEGIN
+I (40578) I2S: DMA Malloc info, datalen=blocksize=600, dma_buf_count=3
+I (40578) I2S: DMA Malloc info, datalen=blocksize=600, dma_buf_count=3
+I (40588) I2S: PLL_D2: Req RATE: 8000, real rate: 8012.000, BITS: 16, CLKM: 78, BCK: 8, MCLK: 2048000.000, SCLK: 256384.000000, diva: 64, divb: 8
+I (40608) LYRAT_MINI_V1_1: I2S1, MCLK output by GPIO0
+I (40608) AUDIO_PIPELINE: link el->rb, el:0x3ffd5258, tag:i2s, rb:0x3ffd5fbc
+I (40618) AUDIO_PIPELINE: link el->rb, el:0x3ffd55c8, tag:filter, rb:0x3ffd80f8
+I (40628) AUDIO_PIPELINE: link el->rb, el:0x3ffd58f8, tag:sip_enc, rb:0x3ffd911c
+I (40628) AUDIO_ELEMENT: [i2s-0x3ffd5258] Element task created
+I (40638) AUDIO_ELEMENT: [filter-0x3ffd55c8] Element task created
+I (40648) AUDIO_ELEMENT: [sip_enc-0x3ffd58f8] Element task created
+I (40648) AUDIO_ELEMENT: [raw-0x3ffd5c30] Element task created
+I (40658) AUDIO_PIPELINE: Func:audio_pipeline_run, Line:359, MEM Total:139236 Bytes
+
+I (40668) AUDIO_ELEMENT: [i2s] AEL_MSG_CMD_RESUME,state:1
+I (40678) I2S_STREAM: AUDIO_STREAM_READER,Rate:8000,ch:1
+I (40678) I2S: PLL_D2: Req RATE: 8000, real rate: 8012.000, BITS: 16, CLKM: 78, BCK: 8, MCLK: 2048000.000, SCLK: 256384.000000, diva: 64, divb: 8
+I (40698) AUDIO_ELEMENT: [filter] AEL_MSG_CMD_RESUME,state:1
+I (40698) AUDIO_ELEMENT: [sip_enc] AEL_MSG_CMD_RESUME,state:1
+I (40698) RSP_FILTER: sample rate of source data : 8000, channel of source data : 1, sample rate of destination data : 8000, channel of destination data : 1
+I (40708) AUDIO_PIPELINE: Pipeline started
+I (40728) VOIP_EXAMPLE:  SIP recorder has been created
+W (40728) I2S: I2S driver already installed
+I (40738) LYRAT_MINI_V1_1: I2S1, MCLK output by GPIO0
+I (40738) AUDIO_PIPELINE: link el->rb, el:0x3ffdebc0, tag:raw, rb:0x3ffdf9a0
+I (40748) AUDIO_PIPELINE: link el->rb, el:0x3ffdeef8, tag:sip_dec, rb:0x3ffdfad8
+I (40758) AUDIO_PIPELINE: link el->rb, el:0x3ffdf278, tag:filter, rb:0x3ffdfc10
+I (40768) AUDIO_ELEMENT: [raw-0x3ffdebc0] Element task created
+I (40778) AUDIO_ELEMENT: [sip_dec-0x3ffdeef8] Element task created
+I (40778) AUDIO_ELEMENT: [filter-0x3ffdf278] Element task created
+I (40788) AUDIO_ELEMENT: [i2s-0x3ffdf614] Element task created
+I (40788) AUDIO_PIPELINE: Func:audio_pipeline_run, Line:359, MEM Total:102888 Bytes
+
+I (40798) AUDIO_ELEMENT: [sip_dec] AEL_MSG_CMD_RESUME,state:1
+I (40808) CODEC_ELEMENT_HELPER: The element is 0x3ffdeef8. The reserve data 2 is 0x0.
+I (40808) AUDIO_ELEMENT: [filter] AEL_MSG_CMD_RESUME,state:1
+I (40818) AUDIO_ELEMENT: [i2s] AEL_MSG_CMD_RESUME,state:1
+I (40828) I2S_STREAM: AUDIO_STREAM_WRITER
+I (40838) AUDIO_PIPELINE: Pipeline started
+I (40838) VOIP_EXAMPLE: SIP player has been created
+I (40848) SIP_RTP: receive task, local addr=192.168.0.246:32794
+:4002848) SIP_RTP: send task, remote addr=192.168.0.196
+I (40868) RSP_FILTER: sample rate of source data : 8000, channel of source data : 1, sample rate of destination data : 8000, channel of destination data : 1
+Rx- 10 Rx- 0 Rx- c Rx- 6a Rx- 0 Rx- 1 Rx- 2d Rx- 44 Rx- 1d Rx- 4 Rx- 0 Rx- 2 Rx- 0 Rx- 1 Rx- 37 Rx- 37 CV 6a 0 1 2d 44 1d 4 0 2 0 1 37 1 2 0 0 1e 
+ The key pressed is 7 
+10018787
+Rx- 10 Rx- 0 Rx- c Rx- 7a Rx- 0 Rx- 1 Rx- 2d Rx- 44 Rx- 1d Rx- 4 Rx- 0 Rx- 2 Rx- 0 Rx- 1 Rx- 38 Rx- 48 CV 7a 0 1 2d 44 1d 4 0 2 0 1 38 1 2 0 0 1e 
+ The key pressed is 8 
+10018080
+Rx- 10 Rx- 0 Rx- c Rx- a Rx- 0 Rx- 1 Rx- 2d Rx- 44 Rx- 1d Rx- 4 Rx- 0 Rx- 2 Rx- 0 Rx- 1 Rx- 37 Rx- d7 CV a 0 1 2d 44 1d 4 0 2 0 1 37 1 2 0 0 1e 
+ The key pressed is 7 
+10018181
+Rx- 10 Rx- 0 Rx- c Rx- 1a Rx- 0 Rx- 1 Rx- 2d Rx- 44 Rx- 1d Rx- 4 Rx- 0 Rx- 2 Rx- 0 Rx- 1 Rx- 38 Rx- e8 CV 1a 0 1 2d 44 1d 4 0 2 0 1 38 1 2 0 0 1e 
+ The key pressed is 8 
+10018282
+Rx- 10 Rx- 0 Rx- c Rx- 2a Rx- 0 Rx- 1 Rx- 2d Rx- 44 Rx- 1d Rx- 4 Rx- 0 Rx- 2 Rx- 0 Rx- 1 Rx- 37 Rx- f7 CV 2a 0 1 2d 44 1d 4 0 2 0 1 37 1 2 0 0 1e 
+ The key pressed is 7 
+10018383
+Rx- 10 Rx- 0 Rx- c Rx- 3a Rx- 0 Rx- 1 Rx- 2d Rx- 44 Rx- 1d Rx- 4 Rx- 0 Rx- 2 Rx- 0 Rx- 1 Rx- 38 Rx- 8 CV 3a 0 1 2d 44 1d 4 0 2 0 1 38 1 2 0 0 1e 
+ The key pressed is 8 
+10018484
+Rx- 10 Rx- 0 Rx- c Rx- 4a Rx- 0 Rx- 1 Rx- 2d Rx- 44 Rx- 1d Rx- 4 Rx- 0 Rx- 2 Rx- 0 Rx- 1 Rx- 37 Rx- 17 CV 4a 0 1 2d 44 1d 4 0 2 0 1 37 1 2 0 0 1e 
+ The key pressed is 7 
+10018585
+Rx- 10 Rx- 0 Rx- c Rx- 5a Rx- 0 Rx- 1 Rx- 2d Rx- 44 Rx- 1d Rx- 4 Rx- 0 Rx- 2 Rx- 0 Rx- 1 Rx- 38 Rx- 28 CV 5a 0 1 2d 44 1d 4 0 2 0 1 38 1 2 0 0 1e 
+ The key pressed is 8 
+10018686
+Rx- 10 Rx- 0 Rx- c Rx- 6a Rx- 0 Rx- 1 Rx- 2d Rx- 44 Rx- 1d Rx- 4 Rx- 0 Rx- 2 Rx- 0 Rx- 1 Rx- 37 Rx- 37 CV 6a 0 1 2d 44 1d 4 0 2 0 1 37 1 2 0 0 1e 
+ The key pressed is 7 
+10018787
+Rx- 10 Rx- 0 Rx- c Rx- 7a Rx- 0 Rx- 1 Rx- 2d Rx- 44 Rx- 1d Rx- 4 Rx- 0 Rx- 2 Rx- 0 Rx- 1 Rx- 38 Rx- 48 CV 7a 0 1 2d 44 1d 4 0 2 0 1 38 1 2 0 0 1e 
+ The key pressed is 8 
+10018080
+Rx- 10 Rx- 0 Rx- c Rx- a Rx- 0 Rx- 1 Rx- 2d Rx- 44 Rx- 1d Rx- 4 Rx- 0 Rx- 2 Rx- 0 Rx- 1 Rx- 37 Rx- d7 CV a 0 1 2d 44 1d 4 0 2 0 1 37 1 2 0 0 1e 
+ The key pressed is 7 
+10018181
+Rx- 10 Rx- 0 Rx- c Rx- 1a Rx- 0 Rx- 1 Rx- 2d Rx- 44 Rx- 1d Rx- 4 Rx- 0 Rx- 2 Rx- 0 Rx- 1 Rx- 38 Rx- e8 CV 1a 0 1 2d 44 1d 4 0 2 0 1 38 1 2 0 0 1e 
+ The key pressed is 8 
+10018282
+Rx- 10 Rx- 0 Rx- c Rx- 2a Rx- 0 Rx- 1 Rx- 2d Rx- 44 Rx- 1d Rx- 4 Rx- 0 Rx- 2 Rx- 0 Rx- 1 Rx- 37 Rx- f7 CV 2a 0 1 2d 44 1d 4 0 2 0 1 37 1 2 0 0 1e 
+ The key pressed is 7 
+10018383
+Rx- 10 Rx- 0 Rx- c Rx- 3a Rx- 0 Rx- 1 Rx- 2d Rx- 44 Rx- 1d Rx- 4 Rx- 0 Rx- 2 Rx- 0 Rx- 1 Rx- 38 Rx- 8 CV 3a 0 1 2d 44 1d 4 0 2 0 1 38 1 2 0 0 1e 
+ The key pressed is 8 
+10018484
+Rx- 10 Rx- 0 Rx- c Rx- 4a Rx- 0 Rx- 1 Rx- 2d Rx- 44 Rx- 1d Rx- 4 Rx- 0 Rx- 2 Rx- 0 Rx- 1 Rx- 37 Rx- 17 CV 4a 0 1 2d 44 1d 4 0 2 0 1 37 1 2 0 0 1e 
+ The key pressed is 7 
+10018585
+Rx- 10 Rx- 0 Rx- c Rx- 5a Rx- 0 Rx- 1 Rx- 2d Rx- 44 Rx- 1d Rx- 4 Rx- 0 Rx- 2 Rx- 0 Rx- 1 Rx- 38 Rx- 28 CV 5a 0 1 2d 44 1d 4 0 2 0 1 38 1 2 0 0 1e 
+ The key pressed is 8 
+10018686
+Rx- 10 Rx- 0 Rx- c Rx- 6a Rx- 0 Rx- 1 Rx- 2d Rx- 44 Rx- 1d Rx- 4 Rx- 0 Rx- 2 Rx- 0 Rx- 1 Rx- 37 Rx- 37 CV 6a 0 1 2d 44 1d 4 0 2 0 1 37 1 2 0 0 1e 
+ The key pressed is 7 
+10018787
+Rx- 10 Rx- 0 Rx- c Rx- 7a Rx- 0 Rx- 1 Rx- 2d Rx- 44 Rx- 1d Rx- 4 Rx- 0 Rx- 2 Rx- 0 Rx- 1 Rx- 38 Rx- 48 CV 7a 0 1 2d 44 1d 4 0 2 0 1 38 1 2 0 0 1e 
+ The key pressed is 8 
+10018080
+I (68968) SIP: [1970-01-01/00:01:04]=======WRITE 0569 bytes>>
+I (68968) SIP:
+
+OPTIONS sip:100@192.168.0.196:5060 SIP/2.0
+Via: SIP/2.0/UDP 192.168.0.246:17003;branch=z9hG4bK-1049351265;rport
+From: <sip:100@192.168.0.196:5060>;tag=-626636483
+To: <sip:100@192.168.0.196:5060>
+Contact: <sip:100@192.168.0.246:17003>
+Max-Forwards: 30
+Call-ID: 8fe43e2d51d64850aab06ed27308da9e
+CSeq: 1 OPTIONS
+Expires: 3600
+User-Agent: ESP32 SIP/2.0
+Content-Length: 0
+Allow: INVITE, ACK, CANCEL, BYE, UPDATE, REFER, MESSAGE, OPTIONS, INFO, SUBSCRIBE
+Supported: replaces, norefersub, extended-refer, timer, X-cisco-serviceuri
+Allow-Events: presence, kpml
+
+
+I (69018) SIP: [1970-01-01/00:01:04]=======================>>
+I (69128) SIP: [1970-01-01/00:01:04]<<=====READ 0496 bytes==
+I (69128) SIP:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 192.168.0.196:65006;received=192.168.0.196;rport=65006;branch=z9hG4bKPj1fb33759aac5495c82a28795b180152a
+From: <sip:100@192.168.0.196:5060>;tag=-626636483
+To: <sip:100@192.168.0.196>;tag=d58635b6
+Call-ID: 8fe43e2d51d64850aab06ed27308da9e
+CSeq: 1 OPTIONS
+Contact: <sip:100@192.168.0.196:5060>
+Date: Tue, 16 Nov 2021 07:03:13 GMT
+Allow: INVITE, ACK, CANCEL, OPTIONS, BYE, REFER, SUBSCRIBE, NOTIFY, INFO, PUBLISH
+Accept: application/sdp
+Content-Length: 0
+
+
+I (69178) SIP: [1970-01-01/00:01:04]<<======================
+Rx- 10 Rx- 0 Rx- c Rx- a Rx- 0 Rx- 1 Rx- 2d Rx- 44 Rx- 1d Rx- 4 Rx- 0 Rx- 2 Rx- 0 Rx- 1 Rx- 37 Rx- d7 CV a 0 1 2d 44 1d 4 0 2 0 1 37 1 2 0 0 1e 
+ The key pressed is 7 
+10018181
+Rx- 10 Rx- 0 Rx- c Rx- 1a Rx- 0 Rx- 1 Rx- 2d Rx- 44 Rx- 1d Rx- 4 Rx- 0 Rx- 2 Rx- 0 Rx- 1 Rx- 38 Rx- e8 CV 1a 0 1 2d 44 1d 4 0 2 0 1 38 1 2 0 0 1e 
+ The key pressed is 8 
+10018282
+Rx- 10 Rx- 0 Rx- c Rx- 2a Rx- 0 Rx- 1 Rx- 2d Rx- 44 Rx- 1d Rx- 4 Rx- 0 Rx- 2 Rx- 0 Rx- 1 Rx- 37 Rx- f7 CV 2a 0 1 2d 44 1d 4 0 2 0 1 37 1 2 0 0 1e 
+ The key pressed is 7 
+10018383
+Rx- 10 Rx- 0 Rx- c Rx- 3a Rx- 0 Rx- 1 Rx- 2d Rx- 44 Rx- 1d Rx- 4 Rx- 0 Rx- 2 Rx- 0 Rx- 1 Rx- 38 Rx- 8 CV 3a 0 1 2d 44 1d 4 0 2 0 1 38 1 2 0 0 1e 
+ The key pressed is 8 
+10018484
+Rx- 10 Rx- 0 Rx- c Rx- 4a Rx- 0 Rx- 1 Rx- 2d Rx- 44 Rx- 1d Rx- 4 Rx- 0 Rx- 2 Rx- 0 Rx- 1 Rx- 37 Rx- 17 CV 4a 0 1 2d 44 1d 4 0 2 0 1 37 1 2 0 0 1e 
+ The key pressed is 7 
+10018585
+Rx- 10 Rx- 0 Rx- c Rx- 5a Rx- 0 Rx- 1 Rx- 2d Rx- 44 Rx- 1d Rx- 4 Rx- 0 Rx- 2 Rx- 0 Rx- 1 Rx- 38 Rx- 28 CV 5a 0 1 2d 44 1d 4 0 2 0 1 38 1 2 0 0 1e 
+ The key pressed is 8 
+10018686
+I (101888) SIP: [1970-01-01/00:01:20]=======WRITE 0568 bytes>>
+I (101888) SIP:
+
+OPTIONS sip:100@192.168.0.196:5060 SIP/2.0
+Via: SIP/2.0/UDP 192.168.0.246:17003;branch=z9hG4bK--77438561;rport
+From: <sip:100@192.168.0.196:5060>;tag=1346321583
+To: <sip:100@192.168.0.196:5060>
+Contact: <sip:100@192.168.0.246:17003>
+Max-Forwards: 30
+Call-ID: 8fe43e2d51d64850aab06ed27308da9e
+CSeq: 1 OPTIONS
+Expires: 3600
+User-Agent: ESP32 SIP/2.0
+Content-Length: 0
+Allow: INVITE, ACK, CANCEL, BYE, UPDATE, REFER, MESSAGE, OPTIONS, INFO, SUBSCRIBE
+Supported: replaces, norefersub, extended-refer, timer, X-cisco-serviceuri
+Allow-Events: presence, kpml
+
+
+I (101938) SIP: [1970-01-01/00:01:20]=======================>>
+I (101968) SIP: [1970-01-01/00:01:20]<<=====READ 0472 bytes==
+I (101968) SIP:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 192.168.0.246:17003;branch=z9hG4bK--77438561;received=192.168.0.246;rport=17003
+From: <sip:100@192.168.0.196:5060>;tag=1346321583
+To: <sip:100@192.168.0.196>;tag=c9b6ebf4
+Call-ID: 8fe43e2d51d64850aab06ed27308da9e
+CSeq: 1 OPTIONS
+Contact: <sip:100@192.168.0.196:5060>
+Date: Tue, 16 Nov 2021 07:03:46 GMT
+Allow: INVITE, ACK, CANCEL, OPTIONS, BYE, REFER, SUBSCRIBE, NOTIFY, INFO, PUBLISH
+Accept: application/sdp
+Content-Length: 0
+
+
+I (102008) SIP: [1970-01-01/00:01:20]<<======================
+Rx- 10 Rx- 0 Rx- 9 Rx- 6a Rx- 0 Rx- 1 Rx- f Rx- 44 Rx- 1d Rx- 0 Rx- 0 Rx- 0 Rx- db CV 6a 0 1 f 44 1d 0 0 0 0 1 38 1 2 0 0 1e I (110878) STATE CALL:  05
+10CC RELEASE IND - CALL DECLINED
+018787
+I (110888) SIP RINGING: 32
+I (110888) SIP CALL: CALL RELEASE
+I (110898) SIP: User call sip BYE
+10092f0110441d000a1
+I (110898) STATE CALL:  11
+10I (110908) STANDBY :  00
+093f011144100096
+I (110908) STANDBY :  00
+I (110918) STATE CALL:  06
+I (110918) SIP: [1970-01-01/00:01:25]=======WRITE 0526 bytes>>
+Rx- 10 Rx- 0 Rx- 1 I (110928) SIP:
+
+BYE sip:200@192.168.0.196:5060 SIP/2.0
+Via: SIP/2.0/UDP 192.168.0.196:5060;branch=z9hG4bK-P73d8384fjaae9b20;rport
+Via: SIP/2.0/UDP 192.168.0.196:65006;received=192.168.0.196;rport=65006;branch=z9hG4bKPj7a3ade893b8240fdbdd148ed1306b337
+From: <sip:100@192.168.0.196>;tag=434973450
+To: <sip:200@192.168.0.196>;tag=bdd31d700fc54132afd56a9f2406b5c2
+Contact: <sip:100@192.168.0.246:17003>
+Max-Forwards: 70
+Call-ID: 8fe43e2d51d64850aab06ed27308da9e
+CSeq: 2 BYE
+Expires: 3600
+User-Agent: ESP32 SIP/2.0
+Content-Length: 0
+
+
+Rx- 83 Rx- 83 Rx- 10 Rx- 0 Rx- 1 I (110978) SIP: [1970-01-01/00:01:25]=======================>>
+Rx- 84 Rx- 84 Rx- 10 Rx- 0 Rx- 9 Rx- 7c Rx- 0 Rx- 1 Rx- 12 Rx- 44 Rx- 1 Rx- 2 Rx- 0 Rx- 0 Rx- d6 10074f01104200a2
+CV 7c 0 1 12 44 1 2 0 0 0 1 38 1 2 0 0 1e Rx- 10 Rx- 0 Rx- 1 Rx- 85 Rx- 85 Rx- 10 Rx- 0 Rx- 8 Rx- d Rx- 0 Rx- 1 Rx- 11 Rx- 42 Rx- 0 Rx- 0 Rx- 0 Rx- 61 10075f01104200b2
+CV d 0 1 11 42 0 0 0 0 0 1 38 1 2 0 0 1e Rx- 10 Rx- 0 Rx- 1 Rx- 86 Rx- 86 Rx- 10 Rx- 0 Rx- 8 Rx- 1e Rx- 0 Rx- 1 Rx- 11 Rx- 42 Rx- 0 10Rx- 0 0a6f0125921100cf
+Rx- 0 Rx- 72 CV 1e 0 1 11 42 0 0 0 0 0 1 38 1 2 0 0 1e Rx- 10 Rx- 0 Rx- 1 Rx- 87 Rx- 87 Rx- 10 Rx- 0 Rx- 6 Rx- 2f Rx- 0 Rx- 1 Rx- 3 10Rx- 59 0a7f0125921100df
+Rx- 0 Rx- 8c CV 2f 0 1 3 59 0 0 0 0 0 1 38 1 2 0 0 1e Rx- 10 Rx- 0 Rx- 1 Rx- 80 Rx- 80 Rx- 10 Rx- 0 Rx- 6 Rx- 38 Rx- 0 Rx- 1 Rx- 3 Rx- 59 Rx- 0 Rx- 95 10018080
+CV 38 0 1 3 59 0 0 0 0 0 1 38 1 2 0 0 1e 10018181
+10018282
+10018383
+10018484
+W (112988) SIP: Retransmit again
+I (112988) SIP: [1970-01-01/00:01:26]=======WRITE 0526 bytes>>
+I (112988) SIP:
+
+BYE sip:200@192.168.0.196:5060 SIP/2.0
+Via: SIP/2.0/UDP 192.168.0.196:5060;branch=z9hG4bK-P73d8384fjaae9b20;rport
+Via: SIP/2.0/UDP 192.168.0.196:65006;received=192.168.0.196;rport=65006;branch=z9hG4bKPj7a3ade893b8240fdbdd148ed1306b337
+From: <sip:100@192.168.0.196>;tag=434973450
+To: <sip:200@192.168.0.196>;tag=bdd31d700fc54132afd56a9f2406b5c2
+Contact: <sip:100@192.168.0.246:17003>
+Max-Forwards: 70
+Call-ID: 8fe43e2d51d64850aab06ed27308da9e
+CSeq: 2 BYE
+Expires: 3600
+User-Agent: ESP32 SIP/2.0
+Content-Length: 0
+
+
+I (113038) SIP: [1970-01-01/00:01:26]=======================>>
+I (113138) SIP: [1970-01-01/00:01:26]<<=====READ 0484 bytes==
+I (113138) SIP:
+
+SIP/2.0 404 No call context found
+Via: SIP/2.0/UDP 192.168.0.196:5060;branch=z9hG4bK-P73d8384fjaae9b20;received=192.168.0.246;rport=17003
+Via: SIP/2.0/UDP 192.168.0.196:65006;received=192.168.0.196;rport=65006;branch=z9hG4bKPj7a3ade893b8240fdbdd148ed1306b337
+From: <sip:100@192.168.0.196>;tag=434973450
+To: <sip:200@192.168.0.196>;tag=bdd31d700fc54132afd56a9f2406b5c2
+Call-ID: 8fe43e2d51d64850aab06ed27308da9e
+CSeq: 2 BYE
+Reason: 1
+Server: TekSIP/v4.1.4
+Content-Length: 0
+
+
+I (113178) SIP: [1970-01-01/00:01:26]<<======================
+W (113188) SIP: CHANGE STATE FROM 32, TO 2, :func: _sip_request_bye:1408
+W (113188) VOIP_EXAMPLE: SIP_EVENT_AUDIO_SESSION_END
+W (113198) AUDIO_ELEMENT: OUT-[filter] AEL_IO_ABORT
+I (113218) SIP_RTP: send task stopped
+W (113438) AUDIO_PIPELINE: There are no listener registered
+I (113438) AUDIO_PIPELINE: audio_pipeline_unlinked
+W (113438) AUDIO_ELEMENT: [raw] Element has not create when AUDIO_ELEMENT_TERMINATE
+W (113448) AUDIO_ELEMENT: [sip_dec] Element has not create when AUDIO_ELEMENT_TERMINATE
+W (113458) AUDIO_ELEMENT: [filter] Element has not create when AUDIO_ELEMENT_TERMINATE
+W (113468) AUDIO_ELEMENT: [i2s] Element has not create when AUDIO_ELEMENT_TERMINATE
+W (113478) AUDIO_ELEMENT: IN-[filter] AEL_IO_ABORT
+W (113478) AUDIO_ELEMENT: IN-[sip_enc] AEL_IO_ABORT
+W (113488) AUDIO_PIPELINE: There are no listener registered
+I (113498) AUDIO_PIPELINE: audio_pipeline_unlinked
+W (113498) AUDIO_ELEMENT: [i2s] Element has not create when AUDIO_ELEMENT_TERMINATE
+W (113508) AUDIO_ELEMENT: [filter] Element has not create when AUDIO_ELEMENT_TERMINATE
+W (113518) AUDIO_ELEMENT: [sip_enc] Element has not create when AUDIO_ELEMENT_TERMINATE
+W (113528) AUDIO_ELEMENT: [raw] Element has not create when AUDIO_ELEMENT_TERMINATE
+I (113538) SIP_RTP: receive task stopped
+I (113538) SIP_RTP: RTP stopped
+W (113538) VOIP_EXAMPLE: SIP_EVENT_HANGUP
+1009c0111441d0007f
+Rx- 10 Rx- 0 Rx- 1 Rx- 81 Rx- 81 Rx- 10 Rx- 0 Rx- 9 Rx- 49 Rx- 0 Rx- 1 Rx- 12 Rx- 44 Rx- 1d Rx- 2 Rx- 0 Rx- 0 Rx- bf CV 49 0 1 12 44 1d 2 0 0 0 1 38 1 2 0 0 1e 10018585
