@@ -138,4 +138,13 @@ git merge
 git rebase
 
 
+===============
+clone 
+=================
+to fetch the repository from git hub to local desktop
+
+git clone https://github.com/srinivasjr04/RepoDemo.git
+
+
+
 
