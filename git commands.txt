@@ -31,16 +31,12 @@ add the repository to git hub
 
 Step 6: establish the link 
 	git remote add origin "Location of remote repository i.e github link"
-	git remote add origin https://github.com/.........   // ssh hyper link
+	git remote add origin https://github.com/srinivasjr04/RepoDemo.git   // https  hyper link
 
 Step 7: Push the local repository to Git hub/remote
 	git push -u origin master   
 	/*  master will be default repository/ else can be used a branch name where the files to be pushed */
 	
-
-
-
-
 
 "Branch Name" - mynewbranch
 step	8 : Create a branch 
@@ -67,4 +63,77 @@ Step 11: Delete the new branch
 	git branch -d mynewbranch (deletes in local repo)
 	// delete the new branch from git hub
 	git push origin --delete mynewbranch (deletes from git hub)
+
+
+// trigger an email notification on a commit in git hub repo
+
+go to git hub repository -> Settings -> Itegration & Services -> add serivice - email 
+			or
+go to git hub repository -> Settings -> Integrations -> Email Notifications -> Notifications
+
+========================================
+Creating TAGS (equals to Labels in VSS)
+========================================
+
+1. Checkout the branch where you want to create the TAG
+	git checkout <Branch Name>
+	example :  git checkout master
+2. Create a TAG with a name
+	git tag <Tag Name>
+	example : git tag v1.0
+3. check the tags info
+	example : git tag
+4. creating a aanotated tags
+	example : git tag -a v1.1 -m "This is release version 1.1"
+		    git tag
+5. display tags
+	example :   git tag
+		 	git show v1.0
+			git tag -l "v1.*"
+
+6. Pusing the Tags to remote repo
+	example : 	git push origin v1.0
+			git push origin --tags  // all at once
+			git push --tags // all at once
+7. Delete TAGS
+	to delete tag from local
+	example : 	git tag -d v1.0
+			git tag--delete v1.0
+8. Delete TAGS from remote
+	example :	git push origin -d v1.0
+			git push origin --delete v1.0
+			git push origin :v1.0
+9. Deleteing Multiple TAGS
+	Local:
+		git tag -d v1.0 v1.1
+	Remote: 
+		git push origin -d v1.0 v1.1
+
+
+10: Checking out the TAGS
+		There is no checking out of TAGS in git, but branch can be created from a TAG and then can be checkout as a branch
+	
+		git checkout -b <Branch Name> <Tag Name>
+
+	Example : git checkout -b ReleaseVer1 v1.0
+11. Can I create a TAG from some past commit
+	Answer : YES
+
+		git tag <Tag Name> <Reference of Commit>
+
+	Example : git tag v1.2 5fcdb03  (first 7 or 8 digits of checksum number of a commit and can be seen from "git log" )
+
+		git push --tags
+
+
+
+	
+
+
+
+
+
+
+
+
 
