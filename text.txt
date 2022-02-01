@@ -6,3 +6,6 @@ git commint -m ".....optional text..."
 
 git config --global user.email "jsrinivasareddy@gmail.com"
 git config --global user.name "Srinivasa Reddy Jayavarapu"
+
+git branch branch_name
+git push -u origin branch_name
