@@ -1,0 +1,70 @@
+Step	1 : Check if git is already installed.
+	terminal:>	git --version
+
+Step	2 : Download and install git
+	https://git-scm.com/download
+
+Step	3 : Signup and create a git hub account
+	https://github.com
+
+Step 4: Add your github email and username to git
+	git config --global user.email "yourgithub@email.com"
+	git config --global user.name	"yourgithubusername"
+
+Step 5: Add file/Folders to git - tracking
+	/* go to windows and create a project folder where you want to start your project
+	right click on the project folder (created or already existing) in options click on "git bash here" */
+
+	// -Terminal - goto the location of the folder/project
+	git init
+	git status
+	git add .    (. for all the files and folders)
+	git add "filename"  for a perticular file to add
+	
+	git commint -m ".....optional text..."
+	git log
+
+Step 6: Removing file 
+	git rm "File name"
+
+add the repository to git hub
+
+Step 6: establish the link 
+	git remote add origin "Location of remote repository i.e github link"
+	git remote add origin https://github.com/.........   // ssh hyper link
+
+Step 7: Push the local repository to Git hub/remote
+	git push -u origin master   
+	/*  master will be default repository/ else can be used a branch name where the files to be pushed */
+	
+
+
+
+
+
+"Branch Name" - mynewbranch
+step	8 : Create a branch 
+	// Make sure that you are in master branch
+	git branch mynewbranch
+
+Step	9 : Checkout branch  //  enter into banch
+	git checkout mynewbranch
+	// do chnages or add files etc
+	//	push to git hub
+	git push -u origin mynewbranch
+
+
+Step 10: Merge new branch in to master branch 
+	// Make sure that you are in master branch
+	git checkout master
+	git merge mynewbranch
+	// push the master branch to git hub
+	git push -u origin master
+
+Step 11: Delete the new branch
+	// Make sure that you are in master branch	
+	git checkout master
+	git branch -d mynewbranch (deletes in local repo)
+	// delete the new branch from git hub
+	git push origin --delete mynewbranch (deletes from git hub)
+
