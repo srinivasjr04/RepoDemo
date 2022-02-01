@@ -21,7 +21,8 @@ Step 5: Add file/Folders to git - tracking
 	git add .    (. for all the files and folders)
 	git add "filename"  for a perticular file to add
 	
-	git commint -m ".....optional text..."
+	git commint -m ".....optional message..."
+	git commit -a -m "message"  // -a is used  for commiting all the files need to be commited.
 	git log
 
 Step 6: Removing file 
